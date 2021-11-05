@@ -3,7 +3,7 @@ FROM alpine:3.13.6 as base
 # Build stage
 FROM base as build
 
-ARG XMRIG_VERSION=v6.15.2
+ARG XMRIG_VERSION=v6.15.3
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON"
 
 RUN set -ex && \
