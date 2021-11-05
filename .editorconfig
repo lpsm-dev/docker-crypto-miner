@@ -1,0 +1,34 @@
+# http://editorconfig.org
+
+# This is the project's root directory
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+# The files are utf-8 encoded
+charset = utf-8
+# Each indent should contain 2 spaces
+indent_size = 2
+# Use Unix line endings
+end_of_line = lf
+# Use spaces for indentation
+indent_style = space
+# A file must end with an empty line - this is good for version control systems
+insert_final_newline = true
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+
+# ================================================
+# 4 SPACE INDENTATION
+# ================================================
+
+[{Makefile,**.mk}]
+indent_size = 4
+indent_style = tab
+
+# ================================================
+# 2 SPACE INDENTATION
+# ================================================
+
+[*.{md,Rmd,rst}]
+trim_trailing_whitespace = false
