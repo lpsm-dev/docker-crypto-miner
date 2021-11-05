@@ -1,0 +1,24 @@
+{
+  "_comment": "this project is not a node.js one, package.json is just used to define some metadata",
+  "scripts": {
+    "cm": "git cz",
+    "lint": "mega-linter-runner -p . --fix",
+    "secrets": "gitleaks --verbose -c .gitleaks.toml -p ."
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "13.2.1",
+    "@commitlint/config-conventional": "13.2.0",
+    "commitizen": "4.2.4",
+    "mega-linter-runner": "4.46.0"
+  }
+}
