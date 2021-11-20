@@ -72,13 +72,33 @@ Abort() {
   echo "An error has occurred - $1. Aborting..." >&2 && exit 1
 }
 
+Welcome() {
+  OS="$(uname)"
+  [ "$OS" = "Linux" ] && DATE_CMD="date" || DATE_CMD="gdate"
+  DATE_INFO=$($DATE_CMD +"%Y-%m-%d %T")
+  DATE_INFO_SHORT=$($DATE_CMD +"%A %B")
+  Status "
+  ╔═══════════════════════════════════════════════════════════════════════
+  ║
+  ║             ✨ Welcome $USER! ✨
+  ║
+  ║ 🔖 Date    - It's now $DATE_INFO - $DATE_INFO_SHORT
+  ║ 🔖 System  - $OS CI context
+  ║
+  ║             👾 Mining Information 👾
+  ║
+  ║ 🔖 Coin           - $COIN
+  ║ 🔖 Referral Code  - $REFERRAL
+  ║ 🔖 Wallet         - $WALLET
+  ║ 🔖 Worker         - $WORKER
+  ║
+  ╚═══════════════════════════════════════════════════════════════════════"
+}
+
+
+
 # ==============================================================================
 # CALL FUNCTIONS
 # ==============================================================================
 
-echo "$HEADER"
-
-Status "Coin: $COIN"
-Status "Referral Code: $REFERRAL"
-Status "Wallet: $WALLET"
-Status "Worker: $WORKER"
+echo "$HEADER" && Welcome
