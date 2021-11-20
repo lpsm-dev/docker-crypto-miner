@@ -45,7 +45,7 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Links## ➤ Links <a name = "links"></a>
+## ➤ Links <a name = "links"></a>
 
 ## ➤ Author <a name = "author"></a>
 
@@ -71,6 +71,10 @@ Contributions, issues and feature requests are welcome. Feel free to check issue
 ## ➤ Troubleshooting <a name = "troubleshooting"></a>
 
 If you have any problems, please contact [me](luccapsm@protonmail.com).
+
+## ➤ Project status <a name = "project-status"></a>
+
+Currently the project is being maintained and constantly changing with new features.
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
