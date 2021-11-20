@@ -26,12 +26,11 @@ RUN set -ex && \
 FROM base
 
 RUN set -ex && \
-      apk add --no-cache bash && \
+      apk add --no-cache bash screen && \
       adduser -S -D -H -h /bin/xmrig miner
 
 COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 
 USER miner
 
-ENTRYPOINT ["xmrig"]
-CMD [ "--help" ]
+CMD [ "xmrig", "--help" ]
