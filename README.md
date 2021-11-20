@@ -47,6 +47,9 @@ Depending on what you are making, it can be a good idea to include screenshots o
 
 ## ➤ Links <a name = "links"></a>
 
+- https://xmrig.com/
+- https://unmineable.com/
+
 ## ➤ Author <a name = "author"></a>
 
 👤 **Lucca Pessoa**
