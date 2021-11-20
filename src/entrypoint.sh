@@ -6,6 +6,9 @@ set -o errexit
 # This option ensures that your script exits as soon as it encounters any failed piped commands
 set -o pipefail
 
+# This option temporary disable history
+set +o history
+
 # This option will trace what gets executed. Useful for debugging
 [[ "$TRACE" ]] && set -o xtrace
 
@@ -44,6 +47,15 @@ HEADER="
 "
 
 # ==============================================================================
+# MINING VARIABLES
+# ==============================================================================
+
+COIN=""
+REFERRAL=""
+WALLET=""
+WORKER=""
+
+# ==============================================================================
 # COMMON FUNCTIONS
 # ==============================================================================
 
@@ -65,3 +77,8 @@ Abort() {
 # ==============================================================================
 
 echo "$HEADER"
+
+Status "Coin: $COIN"
+Status "Referral Code: $REFERRAL"
+Status "Wallet: $WALLET"
+Status "Worker: $WORKER"

@@ -49,6 +49,7 @@ Depending on what you are making, it can be a good idea to include screenshots o
 
 - https://xmrig.com/
 - https://unmineable.com/
+- https://unmineable.com/coins
 
 ## ➤ Author <a name = "author"></a>
 
