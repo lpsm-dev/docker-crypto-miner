@@ -60,7 +60,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 >
 > * Email: luccapsm@protonmail.com
 > * Website: https://github.com/lpmatos
-> * Github: [@lpmatos](https://github.com/lpmatos)
+> * GitHub: [@lpmatos](https://github.com/lpmatos)
 > * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
 >
 
