@@ -17,13 +17,64 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Check out code from GitHub
-      uses: actions/checkout@v2.4.0
-      with:
-        fetch-depth: 0
+      - name: Check out code from GitHub
+        uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
 
-    - name: Secret Dection
-      uses: zricethezav/gitleaks-action@master
-      with:
-        config-path: .gitleaks.toml
-      continue-on-error: false
+      - name: Secret Dection
+        uses: zricethezav/gitleaks-action@master
+        with:
+          config-path: .gitleaks.toml
+        continue-on-error: false
+
+      - name: Hadolint
+        uses: hadolint/hadolint-action@v1.6.0
+        with:
+          dockerfile: Dockerfile
+
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    needs: test
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+        with:
+          install: true
+          buildkitd-flags: --debug
+
+      - name: Available platforms
+        run: echo ${{ steps.buildx.outputs.platforms }}
+
+      - name: Build Dockerfile
+        run: |
+          docker build -t docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }} .
+
+      - name: Dive
+        uses: yuichielectric/dive-action@0.0.4
+        with:
+          image: "docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Trivy vulnerability scanner
+        id: trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: "docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }}"
+          format: "template"
+          template: "@/contrib/sarif.tpl"
+          output: "trivy-results.sarif"
+          vuln-type: "os,library"
+
+      - name: Upload Trivy Scan Results to GitHub Security Tab
+        uses: github/codeql-action/upload-sarif@v1
+        if: always()
+        with:
+          sarif_file: "trivy-results.sarif"
