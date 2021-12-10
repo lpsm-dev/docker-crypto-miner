@@ -101,11 +101,12 @@ jobs:
     name: Scan
     runs-on: ubuntu-20.04
     needs: build
+
     steps:
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
-          image: "{{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
+          image: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
           config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -113,7 +114,7 @@ jobs:
         id: trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "{{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
+          image-ref: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
           format: "template"
           template: "@/contrib/sarif.tpl"
           output: "trivy-results.sarif"
