@@ -105,7 +105,7 @@ jobs:
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
-          image: "xmrig-miner:${{ github.sha }}"
+          image: "{{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
           config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -113,7 +113,7 @@ jobs:
         id: trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "xmrig-miner:${{ github.sha }}"
+          image-ref: "{{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
           format: "template"
           template: "@/contrib/sarif.tpl"
           output: "trivy-results.sarif"
