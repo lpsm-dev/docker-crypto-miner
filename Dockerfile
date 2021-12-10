@@ -31,6 +31,8 @@ RUN set -ex && \
 
 COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 
+WORKDIR /usr/src/mining
+
 USER miner
 
 CMD [ "xmrig", "--help" ]
