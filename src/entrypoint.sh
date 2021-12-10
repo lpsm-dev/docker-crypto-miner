@@ -50,10 +50,14 @@ HEADER="
 # MINING VARIABLES
 # ==============================================================================
 
-COIN=""
-REFERRAL=""
-WALLET=""
-WORKER=""
+CPU_LIMIT_PERCENT="${CPU_LIMIT_PERCENT:-50}"
+CPU_LIMIT=$(($(nproc) * $CPU_LIMIT_PERCENT))
+
+MINING_POOL="${MINING_POOL:-ethash.unmineable.com:3333}"
+MINING_COIN="${MINING_COIN:-SHIB}"
+REFERRAL_CODE="${REFERRAL_CODE:-7lkr-kmhq}"
+WALLET_ADDRESS="${WALLET_ADDRESS:-0x279d74a12a9aeC0c8B36dd42703472B8d0dD5d3C}"
+WORKER_NAME="${WORKER_NAME:-docker}"
 
 # ==============================================================================
 # COMMON FUNCTIONS
@@ -85,17 +89,21 @@ Welcome() {
   ║ 🔖 Date    - It's now $DATE_INFO - $DATE_INFO_SHORT
   ║ 🔖 System  - $OS CI context
   ║
+  ║             👾 CPU Information 👾
+  ║
+  ║ 🔖 CPU_LIMIT_PERCENT - $CPU_LIMIT_PERCENT
+  ║ 🔖 CPU_LIMIT         - $CPU_LIMIT
+  ║
   ║             👾 Mining Information 👾
   ║
-  ║ 🔖 Coin           - $COIN
-  ║ 🔖 Referral Code  - $REFERRAL
-  ║ 🔖 Wallet         - $WALLET
-  ║ 🔖 Worker         - $WORKER
+  ║ 🔖 MINING_POOL    - $MINING_POOL
+  ║ 🔖 MINING_COIN    - $MINING_COIN
+  ║ 🔖 REFERRAL_CODE  - $REFERRAL_CODE
+  ║ 🔖 WALLET_ADDRESS - $WALLET_ADDRESS
+  ║ 🔖 WORKER_NAME    - $WORKER_NAME
   ║
   ╚═══════════════════════════════════════════════════════════════════════"
 }
-
-
 
 # ==============================================================================
 # CALL FUNCTIONS
