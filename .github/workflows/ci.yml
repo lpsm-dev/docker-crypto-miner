@@ -140,8 +140,3 @@ jobs:
         with:
           image: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
           args: --file=Dockerfile
-
-      - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: snyk.sarif
