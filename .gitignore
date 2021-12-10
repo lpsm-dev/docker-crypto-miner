@@ -17,6 +17,7 @@
 # General reports
 /report
 /reports
+.dccache
 
 # ================================================
 # VSCODE
