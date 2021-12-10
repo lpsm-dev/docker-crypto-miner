@@ -44,6 +44,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up QEMU
+        id: qemu
+        uses: docker/setup-qemu-action@v1
+        with:
+          image: tonistiigi/binfmt:latest
+          platforms: all
+
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v1
@@ -51,24 +58,30 @@ jobs:
           install: true
           buildkitd-flags: --debug
 
-      - name: Available platforms
-        run: echo ${{ steps.buildx.outputs.platforms }}
+      - name: Inspect builder
+        run: |
+          echo "Name:      ${{ steps.buildx.outputs.name }}"
+          echo "Endpoint:  ${{ steps.buildx.outputs.endpoint }}"
+          echo "Status:    ${{ steps.buildx.outputs.status }}"
+          echo "Flags:     ${{ steps.buildx.outputs.flags }}"
+          echo "Platforms: ${{ steps.buildx.outputs.platforms }}"
 
       - name: Build Dockerfile
         run: |
-          docker build -t docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }} .
+          docker build -t xmrig-miner:${{ github.sha }} .
 
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
-          image: "docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }}"
+          image: "xmrig-miner:${{ github.sha }}"
+          config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Trivy vulnerability scanner
         id: trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: "docker.io/lpmatos/xmrig-miner/xmrig-miner:${{ github.sha }}"
+          image-ref: "xmrig-miner:${{ github.sha }}"
           format: "template"
           template: "@/contrib/sarif.tpl"
           output: "trivy-results.sarif"
