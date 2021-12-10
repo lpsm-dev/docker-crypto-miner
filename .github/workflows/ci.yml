@@ -100,9 +100,15 @@ jobs:
   scan:
     name: Scan
     runs-on: ubuntu-20.04
+    timeout-minutes: 10
     needs: build
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
