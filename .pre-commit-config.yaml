@@ -8,10 +8,10 @@ repos:
       - id: detect-private-key
       - id: trailing-whitespace
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v7.6.1
+    rev: v8.2.0
     hooks:
       - id: gitleaks
-        args: ["--additional-config", ".gitleaks.toml", "--verbose"]
+        args: ["--config", ".gitleaks.toml", "--verbose"]
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v2.20.0
     hooks:
