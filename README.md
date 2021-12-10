@@ -35,6 +35,14 @@
 
 ## ➤ Getting Started <a name = "getting-started"></a>
 
+If you want contribute on this project, first you need to make a **git clone**:
+
+>
+> 1. git clone --depth 1 <https://github.com/lpmatos/docker-xmrig-miner.git> -b main
+>
+
+This will give you access to the code on your **local machine**.
+
 ## ➤ Description <a name = "description"></a>
 
 ## ➤ Usage <a name = "usage"></a>
