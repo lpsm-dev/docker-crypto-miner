@@ -1,4 +1,4 @@
-FROM alpine:3.13.6 as base
+FROM alpine:3.14 as base
 
 # Build stage
 FROM base as build
