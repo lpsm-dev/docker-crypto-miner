@@ -33,8 +33,9 @@ COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin"
 
 WORKDIR /usr/src/mining
 
-COPY --chown=miner:miner  [ "./config/xmrig.json", "." ]
+COPY [ "./config/xmrig.json", "." ]
+COPY [ "./src/entrypoint.sh", "." ]
 
-USER miner
+RUN chmod +x entrypoint.sh
 
 CMD [ "xmrig", "--help" ]
