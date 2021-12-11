@@ -8,8 +8,8 @@ ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON"
 
 RUN set -ex && \
       apk add --no-cache git make cmake \
-            libstdc++ gcc g++ automake libtool \
-            autoconf linux-headers
+        libstdc++ gcc g++ automake libtool \
+        autoconf linux-headers
 
 WORKDIR /tmp/install
 
@@ -32,6 +32,8 @@ RUN set -ex && \
 COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 
 WORKDIR /usr/src/mining
+
+COPY --chown=miner:miner  [ "./config/xmrig.json", "." ]
 
 USER miner
 
