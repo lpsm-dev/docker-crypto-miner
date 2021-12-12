@@ -59,6 +59,8 @@ REFERRAL_CODE="${REFERRAL_CODE:-7lkr-kmhq}"
 WALLET_ADDRESS="${WALLET_ADDRESS:-0xE36B97Ec98dD179B89BC109c11Eb47D6B587f3F3}"
 WORKER_NAME="${WORKER_NAME:-docker}"
 
+XMRIG_CONFIG_FILE="/usr/src/mining/config/xmrig.json"
+
 # ==============================================================================
 # COMMON FUNCTIONS
 # ==============================================================================
@@ -116,19 +118,19 @@ echo "$HEADER" && Welcome
 if [ -f /.dockerenv ]; then
   Status "✨ Config miner"
 
-  sed -i "s/MINING_POOL/$MINING_POOL/g" /usr/src/mining/xmrig.json
-  sed -i "s/MINING_COIN/$MINING_COIN/g" /usr/src/mining/xmrig.json
-  sed -i "s/WALLET_ADDRESS/$WALLET_ADDRESS/g" /usr/src/mining/xmrig.json
-  sed -i "s/WORKER_NAME/$WORKER_NAME/g" /usr/src/mining/xmrig.json
-  sed -i "s/REFERRAL_CODE/$REFERRAL_CODE/g" /usr/src/mining/xmrig.json
+  sed -i "s/MINING_POOL/$MINING_POOL/g" "$XMRIG_CONFIG_FILE"
+  sed -i "s/MINING_COIN/$MINING_COIN/g" "$XMRIG_CONFIG_FILE"
+  sed -i "s/WALLET_ADDRESS/$WALLET_ADDRESS/g" "$XMRIG_CONFIG_FILE"
+  sed -i "s/WORKER_NAME/$WORKER_NAME/g" "$XMRIG_CONFIG_FILE"
+  sed -i "s/REFERRAL_CODE/$REFERRAL_CODE/g" "$XMRIG_CONFIG_FILE"
 
   Status "✨ Show config miner"
-  cat /usr/src/mining/xmrig.json
+  cat "$XMRIG_CONFIG_FILE"
 
   Status "✨ Starting miner"
 
   #xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
-  xmrig -c /usr/src/mining/config/xmrig.json $@ & sleep 3
+  xmrig -c "$XMRIG_CONFIG_FILE" $@ & sleep 3
 
   cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
 else
