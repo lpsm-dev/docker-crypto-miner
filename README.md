@@ -10,7 +10,6 @@
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://gitlab.com/dry-group/cluster-management)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://gitlab.com/dry-group/cluster-management)
-[![Known Vulnerabilities](https://snyk.io/test/github/lpmatos/docker-xmrig-miner/badge.svg)](https://snyk.io/test/github/lpmatos/docker-xmrig-miner)
 [![CI Status](https://github.com/lpmatos/docker-xmrig-miner/actions/workflows/ci.yml/badge.svg)](https://github.com/lpmatos/docker-xmrig-miner/actions/workflows/ci.yml)
 
 </div>
