@@ -38,4 +38,4 @@ COPY [ "./src", "." ]
 
 RUN chmod +x entrypoint.sh
 
-CMD [ "xmrig", "--help" ]
+CMD [ "bash", "/usr/src/mining/entrypoint.sh" ]
