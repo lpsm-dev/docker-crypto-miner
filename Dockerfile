@@ -4,6 +4,7 @@ FROM alpine:3.14 as base
 FROM base as build
 
 ARG XMRIG_VERSION=v6.15.3
+ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON"
 
 RUN set -ex && \
@@ -14,7 +15,7 @@ RUN set -ex && \
 WORKDIR /tmp/install
 
 RUN set -ex && \
-      git clone --single-branch --depth 1 --branch=$XMRIG_VERSION https://github.com/xmrig/xmrig.git && \
+      git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL && \
       mkdir ./xmrig/build && \
       sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
       sed -i "s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/g" ./xmrig/src/donate.h && \
@@ -33,8 +34,7 @@ COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin"
 
 WORKDIR /usr/src/mining
 
-COPY [ "./config/xmrig.json", "." ]
-COPY [ "./src/entrypoint.sh", "." ]
+COPY [ "./src", "." ]
 
 RUN chmod +x entrypoint.sh
 

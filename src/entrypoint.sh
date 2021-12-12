@@ -128,7 +128,7 @@ if [ -f /.dockerenv ]; then
   Status "✨ Starting miner"
 
   #xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
-  xmrig -c /usr/src/mining/xmrig.json & sleep 3
+  xmrig -c /usr/src/mining/config/xmrig.json $@ & sleep 3
 
   cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
 else

@@ -1,0 +1,54 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: xmrig-miner
+    app.kubernetes.io/component: xmrig-miner
+    app.kubernetes.io/instance: xmrig-miner
+    app.kubernetes.io/name: xmrig-miner
+    app.kubernetes.io/part-of: xmrig-miner
+  name: xmrig-miner
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: xmrig-miner
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: xmrig-miner
+    spec:
+      containers:
+      - image: ghcr.io/lpmatos/docker-xmrig-miner:main
+        imagePullPolicy: IfNotPresent
+        name: xmrig-miner
+        env:
+        - name: TZ
+          value: "America/Sao_Paulo"
+        - name: MINING_POOL
+          value: "rx.unmineable.com:3333"
+        - name: MINING_COIN
+          value: "SHIB"
+        - name: REFERRAL_CODE
+          value: "7lkr-kmhq"
+        - name: WALLET_ADDRESS
+          value: "0xE36B97Ec98dD179B89BC109c11Eb47D6B587f3F3"
+        - name: WORKER_NAME
+          value: "kubernetes"
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 4Gi
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /home/miner
+          name: empty
+      restartPolicy: Always
+      volumes:
+      - emptyDir: {}
+        name: empty
