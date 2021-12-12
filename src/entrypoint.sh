@@ -90,6 +90,7 @@ Welcome() {
   ║
   ║ 🔖 Date    - It's now $DATE_INFO - $DATE_INFO_SHORT
   ║ 🔖 System  - $OS CI context
+  ║ 🔖 Author  - Lucca Pessoa da Silva Matos
   ║
   ║             👾 CPU Information 👾
   ║
