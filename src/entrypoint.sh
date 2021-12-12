@@ -53,6 +53,7 @@ HEADER="
 CPU_LIMIT_PERCENT="${CPU_LIMIT_PERCENT:-50}"
 CPU_LIMIT=$(($(nproc) * $CPU_LIMIT_PERCENT))
 
+MINING_AUTO_CONFIG="${MINING_AUTO_CONFIG:-true}"
 MINING_POOL="${MINING_POOL:-rx.unmineable.com:3333}"
 MINING_COIN="${MINING_COIN:-SHIB}"
 REFERRAL_CODE="${REFERRAL_CODE:-7lkr-kmhq}"
@@ -99,11 +100,12 @@ Welcome() {
   ║
   ║             👾 Mining Information 👾
   ║
-  ║ 🔖 MINING_POOL    - $MINING_POOL
-  ║ 🔖 MINING_COIN    - $MINING_COIN
-  ║ 🔖 REFERRAL_CODE  - $REFERRAL_CODE
-  ║ 🔖 WALLET_ADDRESS - $WALLET_ADDRESS
-  ║ 🔖 WORKER_NAME    - $WORKER_NAME
+  ║ 🔖 MINING_POOL       - $MINING_POOL
+  ║ 🔖 MINING_COIN       - $MINING_COIN
+  ║ 🔖 REFERRAL_CODE     - $REFERRAL_CODE
+  ║ 🔖 WALLET_ADDRESS    - $WALLET_ADDRESS
+  ║ 🔖 WORKER_NAME       - $WORKER_NAME
+  ║ 🔖 XMRIG_CONFIG_FILE - $XMRIG_CONFIG_FILE
   ║
   ╚═══════════════════════════════════════════════════════════════════════
   "
@@ -125,14 +127,15 @@ if [ -f /.dockerenv ]; then
   sed -i "s/WORKER_NAME/$WORKER_NAME/g" "$XMRIG_CONFIG_FILE"
   sed -i "s/REFERRAL_CODE/$REFERRAL_CODE/g" "$XMRIG_CONFIG_FILE"
 
-  Status "✨ Show config miner"
-  cat "$XMRIG_CONFIG_FILE"
+  if [[ "$MINING_AUTO_CONFIG" == "true" ]]; then
+    Status "✨ Starting miner with config"
+    xmrig -c "$XMRIG_CONFIG_FILE" $@ & sleep 3
+  else
+    Status "✨ Starting miner with cli params"
+    xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
+  fi
 
-  Status "✨ Starting miner"
-
-  #xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
-  xmrig -c "$XMRIG_CONFIG_FILE" $@ & sleep 3
-
+  Status "✨ Enable CPU Limit"
   cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
 else
   Status "✨ I'm living in real world!";
