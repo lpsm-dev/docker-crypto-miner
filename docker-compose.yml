@@ -1,11 +1,14 @@
-version: "3"
+version: "3.8"
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "500k"
+    max-file: "20"
 
 services:
   xmrig:
     container_name: xmrig
     build: ./
-    logging:
-      options:
-        max-size: 50m
-    restart: always
-    hostname: xmrig
+    restart: on-failure
+    logging: *default-logging

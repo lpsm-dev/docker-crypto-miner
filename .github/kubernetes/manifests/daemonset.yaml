@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
   labels:
     app: xmrig-miner
@@ -10,17 +10,15 @@ metadata:
     app.kubernetes.io/part-of: xmrig-miner
   name: xmrig-miner
 spec:
-  replicas: 10
   selector:
     matchLabels:
-      app: xmrig-miner
-  strategy:
-    type: RollingUpdate
+      name: xmrig-miner
   template:
     metadata:
       labels:
-        app: xmrig-miner
+        name: xmrig-miner
     spec:
+      hostNetwork: true
       containers:
       - name: xmrig-miner
         image: ghcr.io/lpmatos/docker-xmrig-miner:main
@@ -44,13 +42,3 @@ spec:
             memory: 4Gi
         securityContext:
           privileged: true
-        ports:
-        - containerPort: 8080
-          protocol: TCP
-        volumeMounts:
-        - mountPath: /home/miner
-          name: empty
-      restartPolicy: Always
-      volumes:
-      - emptyDir: {}
-        name: empty
