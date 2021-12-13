@@ -54,7 +54,10 @@ Basicamente o XMRig é um programa de mineração gratuito e com código-fonte a
 xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u COIN:YOUR_ADDRESS.WORKER_NAME#REFERRAL_CODE -p x pause
 ```
 
-O parametro **COIN** é a moeda que você está extraindo, por exemplo: ADA, TRX, WIN ou mais. Além disso, mantenha o símbolo ":" entre a moeda e o seu endereço. O parametro **YOUR_ADDRESS** deve ser um endereço válido para a moeda que você escolher, caso contrário, o pool retornará um erro, também certifique-se de verificar a rede suportada para algumas moedas, como TRC20 para mineração USDT (endereço TRON). O **WORKER_NAME** é simplesmente qualquer nome que você gostaria de definir para seu trabalhador, para identificá-lo no site. Por último o **REFERRAL_CODE** é um parâmetro usado para reduzir a taxa de mineração.
+- **COIN**: é a moeda que você está extraindo, por exemplo: ADA, TRX, WIN ou mais. Além disso, mantenha o símbolo ":" entre a moeda e o seu endereço.
+- **YOUR_ADDRESS**: deve ser um endereço válido para a moeda que você escolher, caso contrário, o pool retornará um erro, também certifique-se de verificar a rede suportada para algumas moedas, como TRC20 para mineração USDT (endereço TRON).
+- **WORKER_NAME**: é simplesmente qualquer nome que você gostaria de definir para seu trabalhador, para identificá-lo no site.
+- **REFERRAL_CODE**: é um parâmetro usado para reduzir a taxa de mineração.
 
 ### Unmineable
 
