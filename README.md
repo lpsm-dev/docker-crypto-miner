@@ -90,18 +90,30 @@ O cpulimit é um utilitário que nos permite limitar o uso da CPU por processo. 
 
 A forma preferida de configurar o XMRig é utilizando um arquivo de configuração no formato JSON, pois é mais flexível e amigável. O CLI não cobre todos os recursos disponíveis, podendo ser um fator de limitação dependendo do cenário.
 
+| Environment       	| Description                 	|
+|-------------------	|-----------------------------	|
+| MINING_POOL       	| URL of mining server        	|
+| MINING_COIN       	| Coin to mining              	|
+| REFERRAL_CODE     	| Param to educe mining rater 	|
+| WALLET_ADDRESS    	| Wallet Address              	|
+| WORKER_NAME       	| Worker name                 	|
+| XMRIG_CONFIG_FILE 	| XMRig config file reference 	   |
+
 ## ➤ Visuals <a name = "visuals"></a>
 
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 ## ➤ Links <a name = "links"></a>
 
-- https://xmrig.com/
-- https://unmineable.com/
-- https://unmineable.com/coins
-- https://academy.bit2me.com/en/which-mining-algorithm-randomx-monero/
-- https://academy.bit2me.com/pt/quem-s%C3%A3o-mineiros-asic/
-- https://www.vultr.com/
+- [XMRig](https://xmrig.com)
+- [XMRig configuration wizard](https://xmrig.com/wizard)
+- [Unmineable](https://unmineable.com)
+- [Profit Calculator](https://www.coincalculators.io)
+- [Optimize CPU minning performance](https://www.nicehash.com/blog/post/how-to-optimize-cpu-mining-performance-for-monero-random-x)
+- [Mining Reward Estimates](https://www.coinwarz.com)
+- [Explain RandomX algorithm](https://academy.bit2me.com/en/which-mining-algorithm-randomx-monero)
+- [What is ASIC?](https://academy.bit2me.com/pt/quem-s%C3%A3o-mineiros-asic)
+- [Cloud Vultr](https://www.vultr.com)
 
 ## ➤ Author <a name = "author"></a>
 
