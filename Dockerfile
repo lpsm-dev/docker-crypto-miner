@@ -14,7 +14,7 @@ RUN set -ex && \
 
 WORKDIR /tmp/install
 
-RUN set -ex && \
+RUN set -ex; \
       git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL && \
       mkdir ./xmrig/build && \
       sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
