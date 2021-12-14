@@ -50,7 +50,8 @@ HEADER="
 # MINING VARIABLES
 # ==============================================================================
 
-CPU_LIMIT_PERCENT="${CPU_LIMIT_PERCENT:-50}"
+CPU_LIMIT_ENABLE="${CPU_LIMIT_ENABLE:-true}"
+CPU_LIMIT_PERCENT="${CPU_LIMIT_PERCENT:-100}"
 CPU_LIMIT=$(($(nproc) * $CPU_LIMIT_PERCENT))
 
 MINING_AUTO_CONFIG="${MINING_AUTO_CONFIG:-true}"
@@ -94,6 +95,7 @@ Welcome() {
   ║
   ║             👾 CPU Information 👾
   ║
+  ║ 🔖 CPU_LIMIT_ENABLE  - $CPU_LIMIT_ENABLE
   ║ 🔖 CPU_LIMIT_PERCENT - $CPU_LIMIT_PERCENT
   ║ 🔖 CPU_LIMIT         - $CPU_LIMIT
   ║
@@ -134,8 +136,12 @@ if [ -f /.dockerenv ]; then
     xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
   fi
 
-  Status "✨ Enable CPU Limit"
-  cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
+  if [[ "$CPU_LIMIT_ENABLE" == "true" ]]; then
+    Status "✨ Enable CPU Limit"
+    cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
+  else
+    Status "✨ Disable CPU Limit"
+  fi
 else
   Status "✨ I'm living in real world!";
 fi

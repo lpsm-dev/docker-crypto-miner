@@ -28,14 +28,19 @@ FROM base
 
 RUN set -ex && \
       apk add --no-cache bash screen cpulimit && \
-      adduser -S -D -H -h /bin/xmrig miner
+      addgroup --gid 1000 xmrig && \
+      adduser --uid 1000 -H -D -G xmrig -h /bin/xmrig xmrig
 
-COPY --from=build --chown=miner:miner [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
+COPY --from=build --chown=xmrig:xmrig [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 
 WORKDIR /usr/src/mining
 
 COPY [ "./src", "." ]
 
-RUN chmod +x entrypoint.sh
+RUN set -ex; \
+  chown -R xmrig:xmrig /usr/src/mining; \
+  chmod +x entrypoint.sh
+
+USER xmrig
 
 CMD [ "bash", "/usr/src/mining/entrypoint.sh" ]
