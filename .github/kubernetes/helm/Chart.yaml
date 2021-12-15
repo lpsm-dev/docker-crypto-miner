@@ -1,9 +1,14 @@
 apiVersion: v2
 name: chart
-description: A Helm chart for Kubernetes
+description: A Helm chart for XMRig Miner
 type: application
 version: 0.1.0
 appVersion: "1.16.0"
+icon: https://xmrig.com/assets/img/xmrig-logo.svg
+home: https://xmrig.com
+sources:
+  - https://github.com/lpmatos/docker-xmrig-miner
+  - https://github.com/xmrig/xmrig
 maintainers:
   - name: Lucca Pessoa da Silva Matos
     email: luccapsm@protonmail.com
