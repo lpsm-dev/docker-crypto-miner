@@ -135,10 +135,6 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
-## ➤ Contributing <a name = "contributing"></a>
-
-Contributions, issues and feature requests are welcome. Feel free to check issues page if you want to contribute. [Check the contributing guide](CONTRIBUTING.md).
-
 ## ➤ Troubleshooting <a name = "troubleshooting"></a>
 
 If you have any problems, please contact [me](luccapsm@protonmail.com).
