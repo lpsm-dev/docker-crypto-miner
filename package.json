@@ -19,6 +19,6 @@
     "@commitlint/cli": "15.0.0",
     "@commitlint/config-conventional": "15.0.0",
     "commitizen": "4.2.4",
-    "mega-linter-runner": "5.3.0"
+    "mega-linter-runner": "5.4.0"
   }
 }
