@@ -8,9 +8,6 @@ title = "gitleaks config"
 # Other secrets might just be a hash which means we need to write more complex rules to verify
 # that what we are matching is a secret.
 #
-# Here is an example of a semi-generic secret
-#
-#   discord_client_secret = "8dyfuiRyq=vVc3RRr_edRk-fK__JItpZ"
 #
 # We can write a regular expression to capture the variable name (identifier),
 # the assignment symbol (like '=' or ':='), and finally the actual secret.
@@ -539,6 +536,5 @@ description = "global allow lists"
 regexes = ['''219-09-9999''', '''078-05-1120''', '''(9[0-9]{2}|666)-\d{2}-\d{4}''']
 paths = [
   '''(.*?)(jpg|gif|doc|pdf|bin|svg|socket)$''',
-  '''.gitleaks.toml''', '''CHANGELOG.md''',
-  '''values.yml''', '''values.yaml'''
+  '''.gitleaks.toml''', '''CHANGELOG.md'''
 ]
