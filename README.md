@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  ✨ An opensource project to mine Monero cryptocurrency ✨
+  ✨ An opensource project to mine using containers ✨
 </p>
 
 <p align="center">
