@@ -2,8 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-    - main
+    branches: [main]
 
 defaults:
   run:
@@ -34,7 +33,7 @@ jobs:
         uses: hadolint/hadolint-action@v1.6.0
         with:
           dockerfile: Dockerfile
-          config: ./.hadolint.yml
+          config: .hadolint.yml
 
   build:
     name: Build
@@ -105,7 +104,7 @@ jobs:
       - name: Dive
         uses: yuichielectric/dive-action@0.0.4
         with:
-          image: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
+          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
           config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
