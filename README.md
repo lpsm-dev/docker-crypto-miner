@@ -102,10 +102,6 @@ O cpulimit é um utilitário que nos permite limitar o uso da CPU por processo. 
 
 É útil para controlar trabalhos em lote, quando você não quer que eles comam muitos ciclos de CPU. O objetivo é impedir que um processo seja executado por mais de uma proporção de tempo especificada. Isso não altera o valor agradável ou outras configurações de prioridade de agendamento, mas o uso real da CPU. Além disso, é capaz de se adaptar à carga geral do sistema de forma dinâmica e rápida. O controle da quantidade de CPU utilizada é feito enviando sinais SIGSTOP e SIGCONT POSIX aos processos. Todos os processos filhos e threads do processo especificado compartilharão a mesma porcentagem de CPU.
 
-## ➤ Visuals <a name = "visuals"></a>
-
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
 ## ➤ Links <a name = "links"></a>
 
 - [XMRig](https://xmrig.com)
