@@ -120,15 +120,11 @@ Depending on what you are making, it can be a good idea to include screenshots o
 
 ## ➤ Author <a name = "author"></a>
 
-👤 **Lucca Pessoa**
-
-Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+👤 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
 >
-> * Email: luccapsm@protonmail.com
-> * Website: https://github.com/lpmatos
-> * GitHub: [@lpmatos](https://github.com/lpmatos)
-> * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
+> * Email: lpsm-dev@protonmail.com
+> * Linktree: https://linktr.ee/lpmatos
 >
 
 ## ➤ Versioning <a name = "versioning"></a>
@@ -145,11 +141,13 @@ Currently the project is being maintained and constantly changing with new featu
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
-Give a ⭐️ if this project helped you!
-
----
-
 <div align="center">
+
+Give me a ⭐️ if this project helped you!
+
+<p>
+  <img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="350px" float="center"/>
+</p>
 
 Made with 💜 by [me](https://github.com/lpmatos) :wave: inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
