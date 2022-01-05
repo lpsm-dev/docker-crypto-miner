@@ -44,7 +44,20 @@ If you want contribute on this project, first you need to make a **git clone**:
 
 This will give you access to the code on your **local machine**.
 
-## ➤ Description <a name = "description"></a>
+## ➤ Usage <a name = "usage"></a>
+
+A forma preferida de configurar o XMRig é utilizando um arquivo de configuração no formato JSON, pois é mais flexível e amigável. O CLI não cobre todos os recursos disponíveis, podendo ser um fator de limitação dependendo do cenário.
+
+| Environment       	| Description                 	|
+|-------------------	|-----------------------------	|
+| MINING_POOL       	| URL of mining server        	|
+| MINING_COIN       	| Coin to mining              	|
+| REFERRAL_CODE     	| Param to educe mining rater 	|
+| WALLET_ADDRESS    	| Wallet Address              	|
+| WORKER_NAME       	| Worker name                 	|
+| XMRIG_CONFIG_FILE 	| XMRig config file reference 	|
+
+## ➤ Concepts <a name = "concepts"></a>
 
 ### XMRig
 
@@ -88,19 +101,6 @@ Uma mining rig é uma plataforma de mineração. A plataforma pode ser um minera
 O cpulimit é um utilitário que nos permite limitar o uso da CPU por processo. Ele nos fornece algumas formas de identificar o processo desejado, seja por nome do processo, PID ou caminho do executável.
 
 É útil para controlar trabalhos em lote, quando você não quer que eles comam muitos ciclos de CPU. O objetivo é impedir que um processo seja executado por mais de uma proporção de tempo especificada. Isso não altera o valor agradável ou outras configurações de prioridade de agendamento, mas o uso real da CPU. Além disso, é capaz de se adaptar à carga geral do sistema de forma dinâmica e rápida. O controle da quantidade de CPU utilizada é feito enviando sinais SIGSTOP e SIGCONT POSIX aos processos. Todos os processos filhos e threads do processo especificado compartilharão a mesma porcentagem de CPU.
-
-## ➤ Usage <a name = "usage"></a>
-
-A forma preferida de configurar o XMRig é utilizando um arquivo de configuração no formato JSON, pois é mais flexível e amigável. O CLI não cobre todos os recursos disponíveis, podendo ser um fator de limitação dependendo do cenário.
-
-| Environment       	| Description                 	|
-|-------------------	|-----------------------------	|
-| MINING_POOL       	| URL of mining server        	|
-| MINING_COIN       	| Coin to mining              	|
-| REFERRAL_CODE     	| Param to educe mining rater 	|
-| WALLET_ADDRESS    	| Wallet Address              	|
-| WORKER_NAME       	| Worker name                 	|
-| XMRIG_CONFIG_FILE 	| XMRig config file reference 	   |
 
 ## ➤ Visuals <a name = "visuals"></a>
 
