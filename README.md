@@ -131,10 +131,6 @@ Depending on what you are making, it can be a good idea to include screenshots o
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
-## ➤ Troubleshooting <a name = "troubleshooting"></a>
-
-If you have any problems, please contact [me](luccapsm@protonmail.com).
-
 ## ➤ Project status <a name = "project-status"></a>
 
 Currently the project is being maintained and constantly changing with new features.
