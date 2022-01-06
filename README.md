@@ -167,6 +167,8 @@ If you find this docker image useful, donations for work on dockerizing the buil
   </a>
 </p>
 
+Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations).
+
 ## ➤ Show your support <a name = "show-your-support"></a>
 
 <div align="center">
