@@ -153,6 +153,18 @@ To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) 
 
 Currently the project is being maintained and constantly changing with new features. 👾
 
+## ➤ Donations <a name = "donations"></a>
+
+If you find this docker image useful, donations for work on dockerizing the build and mining app are appreciated at any of the folllowing addresses:
+
+<div align="center">
+
+<a href="https://www.blockchain.com/pt/btc/address/bc1qn50elv826qs2qd6xhfh6n79649epqyaqmtwky5"><img alt="BTC" src="https://img.shields.io/badge/BTC-black?style=for-the-badge&logo=bitcoin&logoColor=white"></a>
+
+<a href="https://live.blockcypher.com/ltc/address/ltc1qwzrxmlmzzx68k2dnrcrplc4thadm75khzrznjw/"><img alt="Litecoin" src="https://img.shields.io/badge/Litecoin-black?style=for-the-badge&logo=litecoin&logoColor=white"></a>
+
+</div>
+
 ## ➤ Show your support <a name = "show-your-support"></a>
 
 <div align="center">
