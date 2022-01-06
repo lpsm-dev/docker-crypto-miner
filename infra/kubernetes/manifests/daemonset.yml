@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  labels:
+    app: xmrig-miner
+    app.kubernetes.io/component: xmrig-miner
+    app.kubernetes.io/instance: xmrig-miner
+    app.kubernetes.io/name: xmrig-miner
+    app.kubernetes.io/part-of: xmrig-miner
+  name: xmrig-miner
+spec:
+  selector:
+    matchLabels:
+      name: xmrig-miner
+  template:
+    metadata:
+      labels:
+        name: xmrig-miner
+    spec:
+      hostNetwork: true
+      containers:
+      - name: xmrig-miner
+        image: ghcr.io/lpmatos/docker-xmrig-miner:main
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: TZ
+            value: "America/Sao_Paulo"
+          - name: MINING_POOL
+            value: "rx.unmineable.com:3333"
+          - name: MINING_COIN
+            value: "SHIB"
+          - name: REFERRAL_CODE
+            value: "7lkr-kmhq"
+          - name: WALLET_ADDRESS
+            value: "0xE36B97Ec98dD179B89BC109c11Eb47D6B587f3F3"
+          - name: WORKER_NAME
+            value: "kubernetes"
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 4Gi
+        securityContext:
+          privileged: true

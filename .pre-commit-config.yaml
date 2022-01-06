@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: trailing-whitespace
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.2.5
+    hooks:
+      - id: gitleaks
+        args: ["--config", ".github/config/gitleaks.toml", "--verbose"]
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.20.3
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

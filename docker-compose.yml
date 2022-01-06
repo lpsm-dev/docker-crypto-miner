@@ -1,0 +1,32 @@
+version: "3.9"
+
+# ================================================
+# ANCHORS
+# ================================================
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "500k"
+    max-file: "20"
+
+# ================================================
+# DEFINING SERVICES
+# ================================================
+
+services:
+  docker-crypto-miner:
+    container_name: docker-crypto-miner
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    logging: *default-logging
+    networks: [ "docker-crypto-miner" ]
+
+# ================================================
+# DEFINING NETWORKS
+# ================================================
+
+networks:
+  docker-crypto-miner:

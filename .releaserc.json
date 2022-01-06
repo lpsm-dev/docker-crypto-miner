@@ -1,0 +1,144 @@
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "releaseRules": [
+          {
+            "type": "build",
+            "release": "patch"
+          },
+          {
+            "type": "ci",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "release": "patch"
+          },
+          {
+            "type": "feat",
+            "release": "minor"
+          },
+          {
+            "type": "fix",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "minor"
+          },
+          {
+            "type": "style",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "release": "patch"
+          },
+          {
+            "revert": true,
+            "release": "patch"
+          },
+          {
+            "breaking": true,
+            "release": "major"
+          }
+        ],
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+        }
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "parserOpts": {
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+        },
+        "presetConfig": {
+          "types": [
+            {
+              "type": "build",
+              "section": ":nut_and_bolt: Build",
+              "hidden": false
+            },
+            {
+              "type": "ci",
+              "section": ":repeat: CI",
+              "hidden": false
+            },
+            {
+              "type": "docs",
+              "section": ":memo: Docs",
+              "hidden": false
+            },
+            {
+              "type": "feat",
+              "section": ":sparkles: News",
+              "hidden": false
+            },
+            {
+              "type": "fix",
+              "section": ":bug: Fixes",
+              "hidden": false
+            },
+            {
+              "type": "perf",
+              "section": ":fast_forward: Performance",
+              "hidden": false
+            },
+            {
+              "type": "refactor",
+              "section": ":zap: Refactoring",
+              "hidden": false
+            },
+            {
+              "type": "revert",
+              "section": ":flashlight: Reverter",
+              "hidden": false
+            },
+            {
+              "type": "style",
+              "section": ":barber: Stylization",
+              "hidden": false
+            },
+            {
+              "type": "test",
+              "section": ":white_check_mark: Testes",
+              "hidden": false
+            }
+          ]
+        }
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "addReleases": "top"
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "# Semantic Versioning Changelog"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "README.md"],
+        "message": "chore(release): version <%= nextRelease.version %> - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }) %>"
+      }
+    ]
+  ]
+}
