@@ -72,7 +72,8 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 To run the docker container:
 
 ```bash
-docker container run -it --rm \
+docker container run --restart unless-stopped \
+  --name crpto-miner -d --read-only --rm \
   -e MINING_POOL="rx.unmineable.com:3333" \
   -e MINING_COIN="SHIB" \
   -e REFERRAL_CODE="7lkr-kmhq" \
