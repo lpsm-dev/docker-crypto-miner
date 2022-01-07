@@ -127,7 +127,7 @@ The unmineable is a mining pool that enables anyone to become a miner using a pe
 
 The acronym ASIC describes a series of computer equipment designed from start to finish to deliver maximum performance in cryptocurrency mining tasks.
 
-### RandbonX
+### RandomX
 
 RandomX is a proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RandomX uses random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware.
 
