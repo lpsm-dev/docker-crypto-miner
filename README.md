@@ -72,14 +72,26 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 To run the docker container:
 
 ```bash
-docker container run --restart unless-stopped \
-  --name crpto-miner -d --read-only --rm \
+docker container run \
+  --restart unless-stopped --name crypto-miner -d \
   -e MINING_POOL="rx.unmineable.com:3333" \
   -e MINING_COIN="SHIB" \
   -e REFERRAL_CODE="7lkr-kmhq" \
   -e WALLET_ADDRESS="<your-wallet-address>" \
   -e WORKER_NAME="docker-mining" \
   ghcr.io/lpmatos/docker-crypto-miner:main
+```
+
+Shows information logged of the running container:
+
+```bash
+docker logs -f crypto-miner
+```
+
+or
+
+```bash
+docker logs --tail 1000 crypto-miner
 ```
 
 Click [here](https://github.com/lpmatos/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
