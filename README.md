@@ -155,7 +155,7 @@ Pay attention to the images that you use for these purposes and protect yourself
 
 ## ➤ Inspirations <a name = "inspirations"></a>
 
-- https://github.com/rundqvist/docker-unmineable
+- Thanks [@rundqvist](https://github.com/rundqvist/docker-unmineable) for sharing your project.
 
 ## ➤ Author <a name = "author"></a>
 
