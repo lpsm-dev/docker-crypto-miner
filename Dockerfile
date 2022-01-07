@@ -2,7 +2,6 @@ FROM alpine:3.15 as build
 ARG XMRIG_VERSION=v6.15.3
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DCMAKE_BUILD_TYPE=Release -DWITH_HWLOC=OFF -DCMAKE_SYSTEM_NAME=Linux"
-ARG XMRIG_BUILD_EXTRA_ARGS=""
 RUN set -ex && \
       apk add --no-cache git make cmake \
         libstdc++ gcc g++ automake libtool libuv-dev \
@@ -13,9 +12,10 @@ RUN set -ex; \
       mkdir ./xmrig/build && \
       sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
       sed -i "s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/g" ./xmrig/src/donate.h && \
-      ARCH="$(uname -m)" && \
+      export ARCH="$(uname -m)" && export XMRIG_BUILD_EXTRA_ARGS="" \
       if [[ "$ARCH" == *"aarch64"* ]]; then echo "aarch64" && export XMRIG_BUILD_EXTRA_ARGS="-DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm"; fi && \
       cd xmrig/scripts && ./build_deps.sh && cd ../build && \
+      echo $XMRIG_BUILD_EXTRA_ARGS && \
       cmake .. $XMRIG_BUILD_ARGS $XMRIG_BUILD_EXTRA_ARGS && \
       make -j$(nproc)
 
