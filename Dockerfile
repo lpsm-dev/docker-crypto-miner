@@ -5,7 +5,7 @@ ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DCMAKE_BUILD_
 RUN set -ex && \
       apk add --no-cache git make cmake \
         libstdc++ gcc g++ automake libtool \
-        autoconf linux-headers
+        autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
 RUN set -ex; \
       git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL && \
