@@ -4,4 +4,5 @@ FROM gitpod/workspace-full
 RUN brew install fzf \
         terraform \
         terraform-docs \
-        tflint
+        tflint \
+        norwoodj/tap/helm-docs
