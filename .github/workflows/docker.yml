@@ -99,13 +99,6 @@ jobs:
           config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run Dockle
-        uses: erzz/dockle-action@master
-        with:
-          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
-          exit-code: 1
-          failure-threshold: fatal
-
       - name: Run Trivy vulnerability scanner
         id: trivy
         uses: aquasecurity/trivy-action@master
