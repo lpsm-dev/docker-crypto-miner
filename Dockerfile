@@ -1,6 +1,4 @@
-FROM alpine:3.15 as base
-
-FROM base as build
+FROM alpine:3.15 as build
 ARG XMRIG_VERSION=v6.15.3
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON"
@@ -18,7 +16,7 @@ RUN set -ex; \
       cmake .. $XMRIG_BUILD_ARGS && \
       make -j$(nproc)
 
-FROM base
+FROM alpine:3.15
 RUN set -ex && \
       apk add --no-cache bash screen cpulimit && \
       addgroup --gid 1000 xmrig && \
