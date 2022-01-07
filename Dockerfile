@@ -7,13 +7,13 @@ RUN set -ex && \
         libstdc++ gcc g++ automake libtool libuv-dev \
         autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
-RUN /bin/ash -c 'set -ex && \
+RUN /bin/sh -c 'set -ex && \
     ARCH=`uname -m` && \
     if [ "$ARCH" == "arm" ]; then \
        echo "arm" && \
        export XMRIG_BUILD_ARGS="${XMRIG_BUILD_ARGS -DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm}"; \
     fi'
-RUN /bin/ash -c 'set -ex && \
+RUN /bin/sh -c 'set -ex && \
     ARCH=`uname -m` && \
     if [ "$ARCH" == "aarch64" ]; then \
        echo "aarch64" && \
