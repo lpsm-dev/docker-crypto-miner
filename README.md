@@ -169,6 +169,10 @@ To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) 
 
 Currently the project is being maintained and constantly changing with new features. 👾
 
+## ➤ Inspirations <a name = "inspirations"></a>
+
+- https://github.com/rundqvist/docker-unmineable
+
 ## ➤ Donations <a name = "donations"></a>
 
 Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations), and if you find this docker image useful, donations for work on dockerizing the build and mining app are appreciated at any of the folllowing addresses:
