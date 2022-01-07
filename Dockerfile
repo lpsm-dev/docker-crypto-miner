@@ -4,7 +4,7 @@ ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DCMAKE_BUILD_TYPE=Release -DWITH_HWLOC=OFF"
 RUN set -ex && \
       apk add --no-cache git make cmake \
-        libstdc++ gcc g++ automake libtool \
+        libstdc++ gcc g++ automake libtool libuv-dev \
         autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
 RUN set -ex; \
