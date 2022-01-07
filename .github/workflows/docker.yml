@@ -100,16 +100,23 @@ jobs:
           config-file: ${{ github.workspace }}/.dive-ci.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Run Dockle
+        uses: erzz/dockle-action@v1
+        with:
+          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
+          exit-code: 1
+          failure-threshold: fatal
+
       - name: Run Trivy vulnerability scanner
         id: trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main'
-          format: 'table'
+          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
+          format: table
           exit-code: '1'
           ignore-unfixed: true
-          vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH'
+          vuln-type: os,library
+          severity: CRITICAL,HIGH
 
       - name: Run Snyk to check Docker image for vulnerabilities
         continue-on-error: true
@@ -117,5 +124,5 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main'
+          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
           args: --file=Dockerfile
