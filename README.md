@@ -153,6 +153,10 @@ Pay attention to the images that you use for these purposes and protect yourself
 - [XMRig configuration wizard](https://xmrig.com/wizard)
 - [Unmineable](https://unmineable.com)
 
+## ➤ Inspirations <a name = "inspirations"></a>
+
+- https://github.com/rundqvist/docker-unmineable
+
 ## ➤ Author <a name = "author"></a>
 
 👤 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
@@ -168,10 +172,6 @@ To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) 
 ## ➤ Project status <a name = "project-status"></a>
 
 Currently the project is being maintained and constantly changing with new features. 👾
-
-## ➤ Inspirations <a name = "inspirations"></a>
-
-- https://github.com/rundqvist/docker-unmineable
 
 ## ➤ Donations <a name = "donations"></a>
 
