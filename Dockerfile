@@ -13,8 +13,8 @@ RUN set -ex; \
       mkdir ./xmrig/build && \
       sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
       sed -i "s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/g" ./xmrig/src/donate.h && \
-      ARCH=`uname -m` && \
-      if [ "$ARCH" == "aarch64" ]; then echo "aarch64" && XMRIG_BUILD_EXTRA_ARGS="-DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm"; fi && \
+      ARCH="$(uname -m)" && \
+      if [[ "ARCH" == *"aarch64"* ]]; then echo "aarch64" && export XMRIG_BUILD_EXTRA_ARGS="-DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm"; fi && \
       cd xmrig/scripts && ./build_deps.sh && cd ../build && \
       cmake .. $XMRIG_BUILD_ARGS $XMRIG_BUILD_EXTRA_ARGS && \
       make -j$(nproc)
