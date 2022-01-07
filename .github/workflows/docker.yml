@@ -100,7 +100,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Dockle
-        uses: erzz/dockle-action@v1
+        uses: erzz/dockle-action@master
         with:
           image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
           exit-code: 1
