@@ -16,7 +16,7 @@ RUN set -ex; \
       ARCH=`uname -m` && \
       if [ "$ARCH" == "aarch64" ]; then echo "aarch64" && XMRIG_BUILD_EXTRA_ARGS="-DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm"; fi && \
       cd xmrig/scripts && ./build_deps.sh && cd ../build && \
-      cmake .. $XMRIG_BUILD_ARGS &XMRIG_BUILD_EXTRA_ARGS && \
+      cmake .. $XMRIG_BUILD_ARGS $XMRIG_BUILD_EXTRA_ARGS && \
       make -j$(nproc)
 
 FROM alpine:3.15
