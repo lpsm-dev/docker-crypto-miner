@@ -46,9 +46,15 @@ This will give you access to the code on your **local machine**.
 
 ## ➤ Important Note
 
-**This tool is for educational and ethical practices only. The developers are not responsible if the tool is misused by an individual.**
+**This tool is for educational and ethical practices only. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter for mining.**
 
-## ➤ Installation
+## ➤ Description <a name = "description"></a>
+
+This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host anywhere.
+
+CPU mining can be profitable using algorithmns like: Cryptonight, Hodl or Equihash. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
+
+## ➤ Installation <a name = "installation"></a>
 
 ```bash
 docker pull ghcr.io/lpmatos/docker-crypto-miner:main
