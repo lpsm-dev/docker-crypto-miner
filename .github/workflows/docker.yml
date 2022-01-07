@@ -20,7 +20,6 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-20.04
-    timeout-minutes: 20
 
     steps:
       - name: Checkout Repository
@@ -75,7 +74,7 @@ jobs:
           file: Dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
+          platforms: linux/amd64,linux/arm64,linux/ppc64le
           cache-from: |
             type=registry,ref=${{ steps.meta.outputs.tags }}
             type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
