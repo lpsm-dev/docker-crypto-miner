@@ -161,7 +161,7 @@ Currently the project is being maintained and constantly changing with new featu
 
 ## ➤ Donations <a name = "donations"></a>
 
-If you find this docker image useful, donations for work on dockerizing the build and mining app are appreciated at any of the folllowing addresses:
+Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations), and ff you find this docker image useful, donations for work on dockerizing the build and mining app are appreciated at any of the folllowing addresses:
 
 <p align="center">
   <a href="https://www.blockchain.com/pt/btc/address/bc1qn50elv826qs2qd6xhfh6n79649epqyaqmtwky5">
@@ -172,8 +172,6 @@ If you find this docker image useful, donations for work on dockerizing the buil
     <img alt="Litecoin Address" src="https://img.shields.io/badge/Litecoin%20Address-black?style=for-the-badge&logo=litecoin&logoColor=white">
   </a>
 </p>
-
-Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations).
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
