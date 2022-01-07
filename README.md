@@ -50,9 +50,7 @@ This will give you access to the code on your **local machine**.
 
 ## ➤ Description <a name = "description"></a>
 
-This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host anywhere.
-
-CPU mining can be profitable using algorithmns like: Cryptonight, Hodl or Equihash. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
+This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host anywhere. CPU mining can be profitable using algorithmns like: RandomX, Cryptonight, or Equihash. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
 
 ## ➤ Installation <a name = "installation"></a>
 
