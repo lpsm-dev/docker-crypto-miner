@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  ✨ An opensource project to create a dockerfile of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining using containers ✨
+  ✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining using containers ✨
 </p>
 
 <p align="center">
