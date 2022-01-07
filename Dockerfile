@@ -7,14 +7,23 @@ RUN set -ex && \
         libstdc++ gcc g++ automake libtool libuv-dev \
         autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
+RUN /bin/ash -c 'set -ex && \
+    ARCH=`uname -m` && \
+    if [ "$ARCH" == "arm" ]; then \
+       echo "arm" && \
+       export XMRIG_BUILD_ARGS="${XMRIG_BUILD_ARGS -DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm}"; \
+    fi'
+RUN /bin/ash -c 'set -ex && \
+    ARCH=`uname -m` && \
+    if [ "$ARCH" == "aarch64" ]; then \
+       echo "aarch64" && \
+       export XMRIG_BUILD_ARGS="${XMRIG_BUILD_ARGS -DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm}"; \
+    fi'
 RUN set -ex; \
       git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL && \
       mkdir ./xmrig/build && \
       sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
       sed -i "s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/g" ./xmrig/src/donate.h && \
-      ARCH=`uname -m` && \
-      if [ "$ARCH" == "arm" ]; then export XMRIG_BUILD_ARGS="${XMRIG_BUILD_ARGS -DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm}"; fi && \
-      if [ "$ARCH" == "aarch64" ]; then export XMRIG_BUILD_ARGS="${XMRIG_BUILD_ARGS -DARM_TARGET=7 -DCMAKE_SYSTEM_PROCESSOR=arm}"; fi && \
       cd xmrig/scripts && ./build_deps.sh && cd ../build && \
       cmake .. $XMRIG_BUILD_ARGS && \
       make -j$(nproc)
