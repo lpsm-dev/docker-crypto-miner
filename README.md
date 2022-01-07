@@ -108,46 +108,36 @@ This section aims to describe at a high level what the tools we use are and how 
 
 ### XMRig
 
-Basicamente o XMRig é um programa de mineração gratuito e com código-fonte aberto. Ele pode ser instalado no Windows, Linux e macOS, e permite que você minere o algoritmo RandomX. Aqui está um breve exemplo do comando de execução:
+Basically XMRig is a free and open source mining program. It can be installed on Windows, Linux and macOS, and allows you to mine the RandomX algorithm. Here is a brief example of the run command:
 
 ```bash
 xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u COIN:YOUR_ADDRESS.WORKER_NAME#REFERRAL_CODE -p x pause
 ```
 
-- **COIN**: é a moeda que você está extraindo, por exemplo: ADA, TRX, WIN ou mais. Além disso, mantenha o símbolo ":" entre a moeda e o seu endereço.
-- **YOUR_ADDRESS**: deve ser um endereço válido para a moeda que você escolher, caso contrário, o pool retornará um erro, também certifique-se de verificar a rede suportada para algumas moedas, como TRC20 para mineração USDT (endereço TRON).
-- **WORKER_NAME**: é simplesmente qualquer nome que você gostaria de definir para seu trabalhador, para identificá-lo no site.
-- **REFERRAL_CODE**: é um parâmetro usado para reduzir a taxa de mineração.
+- **COIN**: it's the coin that you're extracting, for example: **ADA**, **TRX**, **WIN** or more. Also, keep the `:` symbol between the currency and your address.
+- **YOUR_ADDRESS**: must be a valid address for the currency you choose, otherwise the pool will return an error, also be sure to check the supported network for some currencies like TRC20 for USDT mining (TRON address).
+- **WORKER_NAME**: it's any name that you would like to define for your worker.
+- **REFERRAL_CODE**: it's the parameter used to reduce the mining rate.
 
 ### Unmineable
 
-O Unmineable.com é um pool de mineração que possibilita que qualquer um se torne um minerador utilizando um computador pessoal.
-
-### RandbonX
-
-RandomX é o nome do novo algoritmo de mineração para Monero, a moeda de privacidade cujo objetivo é manter a rede protegida contra mineração ASIC, permitindo apenas mineração por CPU, e ao mesmo tempo proporcionando enorme segurança ao seu protocolo e blockchain.
-
-A operação aproximada de RandomX está escrita em seu nome: a aleatoriedade é sua premissa principal . Mas o que isso significa? Bem, isso significa que RandomX é projetado para criar uma "zona de trabalho" ou bloco de notas completamente aleatório, com alto consumo de memória, e que usa técnicas de virtualização avançadas para seu funcionamento. Esses três pilares permitem que o RandomX seja resistente ao ASIC.
-
-Na verdade, RandomX não é apenas resistente a ASIC, mas também resistente a GPU, já que esses chips não têm as instruções necessárias para executar as operações RandomX complicadas em primeiro lugar. Como resultado, o RandomX busca ser um algoritmo de mineração apenas de CPU, oferecendo a maior resistência possível a outros tipos de mineração. Por outro lado, também visa evitar os chamados botnets muito famosos do Monero, pois o RandomX os tornará quase impossíveis de implementar. Especialmente em dispositivos de baixo consumo de energia, como Smart TV ou dispositivos IoT (Internet of Things ou Internet of Things).
+The unmineable is a mining pool that enables anyone to become a miner using a personal computer.
 
 ### ASIC
 
-O acrônimo ASIC descreve uma série de equipamentos de computador projetados do início ao fim para oferecer o máximo desempenho em tarefas de mineração de criptomoeda.
+The acronym ASIC describes a series of computer equipment designed from start to finish to deliver maximum performance in cryptocurrency mining tasks.
 
-Atualmente, o poder computacional da rede Bitcoin é tão alto que torna impossível a mineração de qualquer outra maneira. ASICs nada mais são do que equipamentos de computador baseados em circuitos ou chips integrados e desenvolvidos para executar funções muito específicas.
+### RandbonX
 
-Os ASICs se tornaram populares no Bitcoin, tornando-se o conjunto otimizado de processadores específicos por excelência para mineração de blocos.
+RandomX is a proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RandomX uses random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware.
 
 ### Mining Rig
 
-Uma mining rig é uma plataforma de mineração. A plataforma pode ser um minerador dedicado onde foi adquirida, construída e operada especificamente para mineração ou pode ser um computador que atende a outras necessidades, como um sistema de jogo, e é usado para minerar apenas em regime de meio período.
+A mining rig is a mining platform. The platform could be a dedicated miner where it was purchased, built and operated specifically for mining, or it could be a computer that meets other needs, such as a gaming system, and is used to mine only on a part-time.
 
 ### CPU Limit
 
-O cpulimit é um utilitário que nos permite limitar o uso da CPU por processo. Ele nos fornece algumas formas de identificar o processo desejado, seja por nome do processo, PID ou caminho do executável.
-
-É útil para controlar trabalhos em lote, quando você não quer que eles comam muitos ciclos de CPU. O objetivo é impedir que um processo seja executado por mais de uma proporção de tempo especificada. Isso não altera o valor agradável ou outras configurações de prioridade de agendamento, mas o uso real da CPU. Além disso, é capaz de se adaptar à carga geral do sistema de forma dinâmica e rápida. O controle da quantidade de CPU utilizada é feito enviando sinais SIGSTOP e SIGCONT POSIX aos processos. Todos os processos filhos e threads do processo especificado compartilharão a mesma porcentagem de CPU.
+The cpulimit is a tool that allow us to limit CPU usage per process. It gives us some ways to identify the desired process, either by process name, PID or executable path. It's useful for controlling batch jobs when you don't want them eat too many CPU cycles. The purpose is to prevent a process from running for more than a specified proportion of time. In addition, it's also able to adapt to the overall system load dynamically and quickly.
 
 ## ➤ Links <a name = "links"></a>
 
