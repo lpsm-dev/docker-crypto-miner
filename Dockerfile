@@ -7,7 +7,7 @@ RUN set -ex && \
         libstdc++ gcc g++ automake libtool libuv-dev \
         autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
-COPY [ "./build.sh", "." ]
+COPY [ "./src/build.sh", "." ]
 RUN chmod +x ./build.sh && ./build.sh
 
 FROM alpine:3.15
@@ -17,7 +17,7 @@ RUN set -ex && \
       adduser --uid 1000 -H -D -G xmrig -h /bin/xmrig xmrig
 COPY --from=build --chown=xmrig:xmrig [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 WORKDIR /usr/src/mining
-COPY [ "./src", "." ]
+COPY [ "./src/xmrig", "." ]
 RUN set -ex; \
   chown -R xmrig:xmrig /usr/src/mining; \
   chmod +x entrypoint.sh
