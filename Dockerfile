@@ -7,15 +7,8 @@ RUN set -ex && \
         libstdc++ gcc g++ automake libtool libuv-dev \
         autoconf linux-headers openssl-dev hwloc-dev
 WORKDIR /tmp/install
-RUN set -ex; \
-      git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL && \
-      mkdir ./xmrig/build && \
-      sed -i "s/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/g" ./xmrig/src/donate.h && \
-      sed -i "s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/g" ./xmrig/src/donate.h && \
-      if [[ "$(uname -m)" == *"aarch64"* ]]; then export XMRIG_BUILD_ARGS="$XMRIG_BUILD_ARGS -DCMAKE_SYSTEM_PROCESSOR=arm"; fi && \
-      cd xmrig/scripts && ./build_deps.sh && cd ../build && \
-      cmake .. $XMRIG_BUILD_ARGS && \
-      make -j$(nproc)
+COPY [ "./build.sh", "." ]
+RUN chmod +x ./build.sh && ./build.sh
 
 FROM alpine:3.15
 RUN set -ex && \
