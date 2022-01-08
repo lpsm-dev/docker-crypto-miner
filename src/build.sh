@@ -3,7 +3,7 @@
 export ARCH=`uname -m`
 export XMRIG_VERSION="v6.15.3"
 export XMRIG_URL="https://github.com/xmrig/xmrig.git"
-export CMAKE_FLAGS="-DXMRIG_DEPS=scripts/deps -DCMAKE_BUILD_TYPE=Release -DWITH_OPENCL=OFF"
+export CMAKE_FLAGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DCMAKE_BUILD_TYPE=Release -DWITH_OPENCL=OFF"
 
 if [[ "$ARCH" == *"aarch64"* ]]; then 
   git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL
