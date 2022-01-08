@@ -17,7 +17,7 @@ RUN set -ex && \
       adduser --uid 1000 -H -D -G xmrig -h /bin/xmrig xmrig
 COPY --from=build --chown=xmrig:xmrig [ "/tmp/install/xmrig/build/xmrig", "/bin" ]
 WORKDIR /usr/src/mining
-COPY [ "./src/xmrig", "." ]
+COPY --chown=xmrig:xmrig [ "./src/xmrig", "." ]
 RUN set -ex; \
   chown -R xmrig:xmrig /usr/src/mining; \
   chmod +x entrypoint.sh
