@@ -23,4 +23,3 @@ else
   cmake .. $XMRIG_BUILD_ARGS && \
   make -j$(nproc)
 fi
-q
