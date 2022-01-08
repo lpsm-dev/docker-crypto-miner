@@ -1,7 +1,7 @@
 FROM alpine:3.15 as build
 ARG XMRIG_VERSION=v6.15.3
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
-ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF gi-DCMAKE_SYSTEM_NAME=Linux"
+ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_OPENCL=OFF -DWITH_ADL=OFF -DWITH_CUDA=OFF -DWITH_NVML=OFF -DCMAKE_SYSTEM_NAME=Linux"
 RUN set -ex && \
       apk add --no-cache git make cmake \
         libstdc++ gcc g++ automake libtool libuv-dev \
