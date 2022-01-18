@@ -26,6 +26,6 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "commitizen": "4.2.4",
     "mega-linter-runner": "5.5.0",
-    "semantic-release": "18.0.1"
+    "semantic-release": "19.0.2"
   }
 }
