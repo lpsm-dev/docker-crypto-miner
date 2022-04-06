@@ -2,8 +2,8 @@
   "_comment":"this project is not a node.js one, package.json is just used to define some metadata",
   "scripts":{
     "cm":"git cz",
-    "lint":"mega-linter-runner -p . --fix",
-    "secrets":"gitleaks detect -s . -c .github/config/gitleaks.toml"
+    "precommit":"pre-commit run -a",
+    "secrets":"gitleaks detect --config .github/config/.gitleaks.toml --verbose"
   },
   "commitlint":{
     "extends":[
@@ -20,12 +20,14 @@
     "@commitlint/config-conventional":"16.0.0",
     "@semantic-release/changelog":"6.0.1",
     "@semantic-release/commit-analyzer":"9.0.2",
-    "@semantic-release/exec":"6.0.3",
     "@semantic-release/git":"10.0.1",
-    "@semantic-release/gitlab":"8.1.0",
+    "@semantic-release/github":"8.1.0",
     "@semantic-release/release-notes-generator":"10.0.3",
     "commitizen":"4.2.4",
-    "mega-linter-runner":"5.10.0",
     "semantic-release":"18.0.1"
+  },
+  "resolutions":{
+    "ansi-regex":"^6.0.0",
+    "marked":"^4.0.10"
   }
 }
