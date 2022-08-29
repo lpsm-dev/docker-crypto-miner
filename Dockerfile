@@ -1,4 +1,4 @@
-FROM alpine:3.15 as build
+FROM alpine:3.16 as build
 ARG XMRIG_VERSION=v6.15.3
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_OPENCL=OFF -DCMAKE_SYSTEM_NAME=Linux"
@@ -10,7 +10,7 @@ WORKDIR /tmp/install
 COPY [ "./src/build.sh", "." ]
 RUN chmod +x ./build.sh && ./build.sh
 
-FROM alpine:3.15
+FROM alpine:3.16
 RUN set -ex && \
       apk add --no-cache bash screen cpulimit && \
       addgroup --gid 1000 xmrig && \
