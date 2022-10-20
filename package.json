@@ -24,7 +24,7 @@
     "@semantic-release/github":"8.0.6",
     "@semantic-release/release-notes-generator":"10.0.3",
     "commitizen":"4.2.5",
-    "semantic-release": ">=19.0.3"
+    "semantic-release": "19.0.5"
   },
   "resolutions":{
     "ansi-regex":"^6.0.0",
