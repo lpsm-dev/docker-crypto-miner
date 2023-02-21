@@ -14,19 +14,19 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Check out code from GitHub
-        uses: actions/checkout@v3.3.0
-        with:
-          fetch-depth: 0
+    - name: Checkout
+      uses: actions/checkout@v3.3.0
+      with:
+        fetch-depth: 0
 
-      - name: Secret Dection
-        uses: zricethezav/gitleaks-action@master
-        with:
-          config-path: ${{ github.workspace }}/.github/config/.gitleaks.toml
-        continue-on-error: false
+    - name: Secret Dection
+      uses: zricethezav/gitleaks-action@master
+      with:
+        config-path: ${{ github.workspace }}/.github/config/.gitleaks.toml
+      continue-on-error: false
 
-      - name: Hadolint
-        uses: hadolint/hadolint-action@v3.1.0
-        with:
-          dockerfile: Dockerfile
-          config: ${{ github.workspace }}/.github/config/.hadolint.yml
+    - name: Hadolint
+      uses: hadolint/hadolint-action@v3.1.0
+      with:
+        dockerfile: Dockerfile
+        config: ${{ github.workspace }}/.github/config/.hadolint.yml
