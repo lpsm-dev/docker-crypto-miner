@@ -60,7 +60,6 @@ MINING_COIN="${MINING_COIN:-SHIB}"
 REFERRAL_CODE="${REFERRAL_CODE:-7lkr-kmhq}"
 WALLET_ADDRESS="${WALLET_ADDRESS:-0xE36B97Ec98dD179B89BC109c11Eb47D6B587f3F3}"
 WORKER_NAME="${WORKER_NAME:-docker}"
-
 XMRIG_CONFIG_FILE="/usr/src/mining/config/xmrig.json"
 
 # ==============================================================================

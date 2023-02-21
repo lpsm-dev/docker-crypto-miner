@@ -1,7 +1,6 @@
 #!/bin/bash -x
 
 export ARCH=`uname -m`
-export XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DCMAKE_BUILD_TYPE=Release -DWITH_OPENCL=OFF"
 
 if [[ "$ARCH" == *"aarch64"* ]]; then
   git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL
