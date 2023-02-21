@@ -20,9 +20,11 @@ jobs:
         fetch-depth: 0
 
     - name: Secret Dection
-      uses: zricethezav/gitleaks-action@master
-      with:
-        config-path: ${{ github.workspace }}/.github/config/.gitleaks.toml
+      uses: gitleaks/gitleaks-action@v2
+      env:
+        GITLEAKS_CONFIG: ${{ github.workspace }}/.github/config/.gitleaks.toml
+        GITLEAKS_ENABLE_COMMENTS: true
+        GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true
       continue-on-error: false
 
     - name: Hadolint
