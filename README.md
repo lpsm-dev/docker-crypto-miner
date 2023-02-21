@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="gif-header" src="https://cdn.hackernoon.com/hn-images/0*KyeIBTwEiX6_sE06" width="300"/>
+<img alt="gif-header" src="https://cdn.hackernoon.com/hn-images/0*KyeIBTwEiX6_sE06" width="225"/>
 
 <h2 align="center">✨ Docker crypto miner ✨</h2>
 
@@ -10,12 +10,11 @@
 
 ---
 
-<img alt="gif-about" src="https://thumbs.gfycat.com/GrizzledRemoteHornet-small.gif" width="325"/>
+<img alt="gif-about" src="https://thumbs.gfycat.com/GrizzledRemoteHornet-small.gif" width="275/>
 
 <p>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</p>
 
 <p>
-  <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#concepts">Concepts</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#security">Security</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -25,16 +24,6 @@
 </div>
 
 ---
-
-## ➤ Getting Started <a name = "getting-started"></a>
-
-If you want contribute on this project, first you need to make a **git clone**:
-
->
-> 1. git clone --depth 1 <https://github.com/lpmatos/docker-crypto-miner.git> -b main
->
-
-This will give you access to the code on your **local machine**.
 
 ## ➤ Important Note
 
@@ -131,7 +120,11 @@ The cpulimit is a tool that allow us to limit CPU usage per process. It gives us
 
 ## ➤ Security <a name = "security"></a>
 
+<div align="center">
+
 <img alt="gif-about" src="https://documents.trendmicro.com/images/TEx/articles/Docker%20Infection%20Chain-01.jpg" width="450"/>
+
+</div>
 
 Pay attention to the images that you use for these purposes and protect yourself from cryptojacking. Containers have become frequent targets of threat actors who conduct malicious cryptocurrency mining and other attacks. Last year, Trend Micro came across activities of cryptocurrency miners that were deployed as rogue containers using a community-distributed image published on Docker Hub. In May, researchers found an open directory containing a malicious cryptocurrency miner and Distributed Denial of Service (DDoS) bot that targeted open Docker daemon ports. In the attack, an Alpine Linux container was created to host the cryptocurrency miner and DDoS bot.
 
@@ -179,7 +172,7 @@ Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#dona
 
 Give me a ⭐️ if this project helped you!
 
-<img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="350"/>
+<img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="225"/>
 
 Made with 💜 by [me](https://github.com/lpmatos) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
