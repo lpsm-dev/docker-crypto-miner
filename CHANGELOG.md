@@ -1,5 +1,44 @@
 # Semantic Versioning Changelog
 
+## [1.2.0](https://github.com/ci-monk/docker-crypto-miner/compare/1.1.0...1.2.0) (2023-02-21)
+
+
+### :memo: Docs
+
+* call image ([33920f3](https://github.com/ci-monk/docker-crypto-miner/commit/33920f3281e94d85eb75a0a99e2e98d06dfcb87a))
+* change things ([f99a8b8](https://github.com/ci-monk/docker-crypto-miner/commit/f99a8b81dbe54805db9b553e55ea4e83aba32792))
+* final changes ([eeb2e14](https://github.com/ci-monk/docker-crypto-miner/commit/eeb2e14de39c4ad46fd319bd7504429c1f404507))
+* fix alt ([2e96771](https://github.com/ci-monk/docker-crypto-miner/commit/2e9677182fb750f0797b5ab618427954f308c72d))
+* fix gif url ([e89687c](https://github.com/ci-monk/docker-crypto-miner/commit/e89687c40c0423ea5e9cb06590208f27b5baee4f))
+* remove link ([030f425](https://github.com/ci-monk/docker-crypto-miner/commit/030f425122531061ebe7f85bc8175f00f9fa24ac))
+* remove topics ([7117800](https://github.com/ci-monk/docker-crypto-miner/commit/7117800dd5f1941e6dc3b5cf56b06cc859b9b658))
+
+
+### :sparkles: News
+
+* add empty double quotes ([f9c81b9](https://github.com/ci-monk/docker-crypto-miner/commit/f9c81b98c4c56d48c9eb72a6ba2da95dccd30f17))
+* add file ([9fc79fa](https://github.com/ci-monk/docker-crypto-miner/commit/9fc79faa269fd9f77c47b8f6a7c90c77a6e7413d))
+
+
+### :bug: Fixes
+
+* change gitleaks config ([94720a1](https://github.com/ci-monk/docker-crypto-miner/commit/94720a1202f334cea2f96af662e16af0cfc88564))
+* change gitleaks setup ([47b7af4](https://github.com/ci-monk/docker-crypto-miner/commit/47b7af4505993ae8386fc93d3e52e59a05413416))
+* dependencies package ([8ab520c](https://github.com/ci-monk/docker-crypto-miner/commit/8ab520c8b307f70a281c159aeea68bf9baa4aaff))
+* docker-compose and dockerfile setup ([7518264](https://github.com/ci-monk/docker-crypto-miner/commit/751826456416375c4c05f744f9507fae8004a858))
+* dockerfile and build ([693b70b](https://github.com/ci-monk/docker-crypto-miner/commit/693b70b36d038489d5c0d70d35ee46fe8b149e73))
+* gitpod tag image ([10f90b7](https://github.com/ci-monk/docker-crypto-miner/commit/10f90b7d9319340e6442ff4e2e7db4274b393c59))
+* kubernetes incidents in manifets snyk ([7543ca8](https://github.com/ci-monk/docker-crypto-miner/commit/7543ca8ad0f9b4c16db496567a9e388b20fefef4))
+* kubernetes manifests and helm ([bb2c87b](https://github.com/ci-monk/docker-crypto-miner/commit/bb2c87bbd8dd3916b08e21e781d434ff0e29f4fd))
+* package.json formatter ([eea9cb5](https://github.com/ci-monk/docker-crypto-miner/commit/eea9cb5c69d035de5a5c9947f4c5a3d93336a85b))
+* package.json versions ([a4b74d3](https://github.com/ci-monk/docker-crypto-miner/commit/a4b74d338d6f2d4450adbf09d8afdc10c2149ca5))
+* remove dependabot ([416b3ed](https://github.com/ci-monk/docker-crypto-miner/commit/416b3ed9bc468d589a59de6fbc1c9c6337644045))
+* remove files, change readme and rename folder ([35e5b27](https://github.com/ci-monk/docker-crypto-miner/commit/35e5b271f606437c484b3c820b56423f171b0e4f))
+* rename cmake flags name ([50ac914](https://github.com/ci-monk/docker-crypto-miner/commit/50ac9147369202ddcb9559cce7f892ccffc8305f))
+* setups files ([c413fa9](https://github.com/ci-monk/docker-crypto-miner/commit/c413fa9de4e640f2142384358f14124d497c190d))
+* var -DBUILD_STATIC=ON ([313539d](https://github.com/ci-monk/docker-crypto-miner/commit/313539d9a563c2ece3dc4a761818bdeaa022ac85))
+* workflows github ([ee9fe3e](https://github.com/ci-monk/docker-crypto-miner/commit/ee9fe3e1fbd4459fb87334d9bdd2316646a32b4c))
+
 ## [1.1.0](https://github.com/lpmatos/docker-crypto-miner/compare/1.0.0...1.1.0) (2022-01-08)
 
 
