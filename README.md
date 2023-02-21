@@ -2,18 +2,17 @@
 
 <img alt="gif-header" src="https://github.com/ci-monk/personal-resume/blob/main/assets/flow.gif" width="225"/>
 
-<h2 align="center">✨ Docker crypto miner ✨</h2>
+<h2>✨ Docker Crypto Miner ✨</h2>
 
-[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://gitlab.com/dry-group/cluster-management)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://gitlab.com/dry-group/cluster-management)
-[![CI Status](https://github.com/lpmatos/docker-xmrig-miner/actions/workflows/ci.yml/badge.svg)](https://github.com/lpmatos/docker-xmrig-miner/actions/workflows/ci.yml)
+[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.dev/ci-monk/docker-crypto-miner)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://github.dev/ci-monk/docker-crypto-miner)
 
 ---
 
 <img alt="gif-about" src="https://github.com/ci-monk/personal-resume/blob/main/assets/coding.gif" width="275"/>
 
 
-<p>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</p>
+<h3>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</h3>
 
 <p>
   <a href="#usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -26,7 +25,7 @@
 
 ---
 
-## ➤ Important Note
+## ➤ Important Note <a name = "important-note"></a>
 
 **This tool is for educational and ethical practices only. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter for mining.**
 
@@ -34,7 +33,7 @@
 
 This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host anywhere. CPU mining can be profitable using algorithmns like: RandomX, Cryptonight, or Equihash. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
 
-## ➤ Installation <a name = "installation"></a>
+## ➤ Install <a name = "install"></a>
 
 ```bash
 docker pull ghcr.io/lpmatos/docker-crypto-miner:main
@@ -149,23 +148,9 @@ Pay attention to the images that you use for these purposes and protect yourself
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
-## ➤ Project status <a name = "project-status"></a>
-
-Currently the project is being maintained and constantly changing with new features. 👾
-
 ## ➤ Donations <a name = "donations"></a>
 
-Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations), and if you find this docker image useful, donations for work on dockerizing the build and mining app are appreciated at any of the folllowing addresses:
-
-<p align="center">
-  <a href="https://www.blockchain.com/pt/btc/address/bc1qn50elv826qs2qd6xhfh6n79649epqyaqmtwky5">
-    <img alt="BTC Address" src="https://img.shields.io/badge/BTC%20Address-black?style=for-the-badge&logo=bitcoin&logoColor=white">
-  </a>
-
-  <a href="https://live.blockcypher.com/ltc/address/ltc1qwzrxmlmzzx68k2dnrcrplc4thadm75khzrznjw/">
-    <img alt="Litecoin Address" src="https://img.shields.io/badge/Litecoin%20Address-black?style=for-the-badge&logo=litecoin&logoColor=white">
-  </a>
-</p>
+Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations).
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
@@ -175,6 +160,6 @@ Give me a ⭐️ if this project helped you!
 
 <img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="225"/>
 
-Made with 💜 by [me](https://github.com/lpmatos) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+Made with 💜 by [me](https://github.com/ci-monk) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
 </div>
