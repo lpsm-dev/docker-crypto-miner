@@ -2,21 +2,17 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
+  name: xmrig-miner
   labels:
     app: xmrig-miner
-    app.kubernetes.io/component: xmrig-miner
-    app.kubernetes.io/instance: xmrig-miner
-    app.kubernetes.io/name: xmrig-miner
-    app.kubernetes.io/part-of: xmrig-miner
-  name: xmrig-miner
 spec:
   selector:
     matchLabels:
-      name: xmrig-miner
+      app: xmrig-miner
   template:
     metadata:
       labels:
-        name: xmrig-miner
+        app: xmrig-miner
     spec:
       hostNetwork: true
       containers:
@@ -38,7 +34,7 @@ spec:
             value: "kubernetes"
         resources:
           requests:
-            cpu: 1000m
-            memory: 4Gi
+            cpu: "1000m"
+            memory: "4Gi"
         securityContext:
           privileged: true
