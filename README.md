@@ -124,7 +124,6 @@ Pay attention to the images that you use for these purposes and protect yourself
 
 ## ➤ Links <a name = "links"></a>
 
-- [XMRig](https://xmrig.com)
 - [XMRig configuration wizard](https://xmrig.com/wizard)
 - [Unmineable](https://unmineable.com)
 - [Profit Calculator](https://www.coincalculators.io)
