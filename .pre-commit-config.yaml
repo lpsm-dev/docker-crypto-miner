@@ -1,18 +1,22 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.4.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
       - id: check-merge-conflict
       - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      - id: end-of-file-fixer
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.2.5
+    rev: v8.15.3
     hooks:
       - id: gitleaks
-        args: ["--config", ".github/config/gitleaks.toml", "--verbose"]
+        args: ["--config", ".github/config/.gitleaks.toml", "--verbose"]
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.20.3
+    rev: v2.42.0
     hooks:
       - id: commitizen
         stages: [commit-msg]

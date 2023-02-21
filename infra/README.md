@@ -10,7 +10,7 @@
 
 ### Terraform
 
-Terraform is an infrastructure as code (IaC) tool that allows you to build, change, and version infrastructure safely and efficiently. 
+Terraform is an infrastructure as code (IaC) tool that allows you to build, change, and version infrastructure safely and efficiently.
 
 ### Kubernetes
 

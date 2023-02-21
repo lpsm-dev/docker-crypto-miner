@@ -22,6 +22,9 @@
 # Dot env
 .env
 
+# General folders
+completions
+
 # ================================================
 # VSCODE
 # ================================================
@@ -41,7 +44,6 @@
 # ================================================
 
 npm-debug.log*
-package-lock.json
 
 # Dependency directories
 node_modules/
