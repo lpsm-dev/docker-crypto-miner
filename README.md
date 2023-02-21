@@ -151,7 +151,7 @@ Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#dona
 
 Give me a ⭐️ if this project helped you!
 
-<img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="225"/>
+<img alt="gif-footer" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="225"/>
 
 Made with 💜 by [me](https://github.com/ci-monk) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
