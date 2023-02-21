@@ -14,7 +14,6 @@ spec:
       labels:
         app: xmrig-miner
     spec:
-      hostNetwork: true
       containers:
       - name: xmrig-miner
         image: ghcr.io/lpmatos/docker-xmrig-miner:main
@@ -33,8 +32,9 @@ spec:
           - name: WORKER_NAME
             value: "kubernetes"
         resources:
+          limits:
+            cpu: "2000m"
+            memory: "8Gi"
           requests:
             cpu: "1000m"
             memory: "4Gi"
-        securityContext:
-          privileged: true

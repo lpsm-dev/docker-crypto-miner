@@ -38,11 +38,12 @@ spec:
           - name: WORKER_NAME
             value: "kubernetes"
         resources:
+          limits:
+            cpu: "2000m"
+            memory: "8Gi"
           requests:
             cpu: "1000m"
             memory: "4Gi"
-        securityContext:
-          privileged: true
         volumeMounts:
         - mountPath: /home/miner
           name: empty
