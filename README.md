@@ -10,7 +10,8 @@
 
 ---
 
-<img alt="gif-about" src="https://github.com/lpmatos/personal-resume/blob/main/assets/coding.gif" width="275/>
+<img alt="gif-about" src="https://github.com/ci-monk/personal-resume/blob/main/assets/coding.gif" width="275"/>
+
 
 <p>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</p>
 
