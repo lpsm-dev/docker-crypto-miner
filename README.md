@@ -12,7 +12,7 @@
 <img alt="gif-about" src="https://github.com/ci-monk/personal-resume/blob/main/assets/coding.gif" width="275"/>
 
 
-<h3>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</h3>
+<h4>✨ An opensource project to create a docker image of <a href=https://github.com/xmrig/xmrig>XMRig</a> miner and mining cryptocurrencies using containers ✨</h4>
 
 <p>
   <a href="#usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -32,12 +32,6 @@
 ## ➤ Description <a name = "description"></a>
 
 This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host anywhere. CPU mining can be profitable using algorithmns like: RandomX, Cryptonight, or Equihash. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
-
-## ➤ Install <a name = "install"></a>
-
-```bash
-docker pull ghcr.io/lpmatos/docker-crypto-miner:main
-```
 
 ## ➤ Setup <a name = "setup"></a>
 
