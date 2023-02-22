@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: xmrig-miner
-        image: ghcr.io/lpmatos/docker-xmrig-miner:main
+        image: ghcr.io/ci-monk/docker-xmrig-miner:main
         imagePullPolicy: IfNotPresent
         env:
           - name: TZ

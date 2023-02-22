@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: ghcr.io/lpmatos/docker-xmrig-miner
+  repository: ghcr.io/ci-monk/docker-xmrig-miner
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "main"

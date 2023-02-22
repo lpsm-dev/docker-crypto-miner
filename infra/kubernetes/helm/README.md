@@ -27,7 +27,7 @@ A Helm chart for XMRig Monero Miner
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"ghcr.io/lpmatos/docker-xmrig-miner"` |  |
+| image.repository | string | `"ghcr.io/ci-monk/docker-xmrig-miner"` |  |
 | image.tag | string | `"main"` |  |
 | imagePullSecrets | list | `[]` |  |
 | nameOverride | string | `""` |  |
