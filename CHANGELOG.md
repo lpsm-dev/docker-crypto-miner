@@ -1,5 +1,45 @@
 # Semantic Versioning Changelog
 
+## [1.3.0](https://github.com/ci-monk/docker-crypto-miner/compare/1.2.0...1.3.0) (2023-02-22)
+
+
+### :bug: Fixes
+
+* call script and run ([4849f57](https://github.com/ci-monk/docker-crypto-miner/commit/4849f57031144c2fc98ee9bbdbdc82356381ba67))
+* circle ci location ([bea75f7](https://github.com/ci-monk/docker-crypto-miner/commit/bea75f701e56c3dbe521b6e69a7f821cb477d8eb))
+* helm-docs readme ([a392ab8](https://github.com/ci-monk/docker-crypto-miner/commit/a392ab883db20309dfc2b1ff33b258da89678b9a))
+* image path ([67449fc](https://github.com/ci-monk/docker-crypto-miner/commit/67449fc4388f7b87c9071d912b6db6961df9f3ef))
+* job syntax running when ([a8a128c](https://github.com/ci-monk/docker-crypto-miner/commit/a8a128c20d41d80f9533332b365feba1de2dbc22))
+* run script ([002d127](https://github.com/ci-monk/docker-crypto-miner/commit/002d12768abe0a2aa433caec0040f413890694d6))
+* script circle ci ([e00d79e](https://github.com/ci-monk/docker-crypto-miner/commit/e00d79ee591b9d6f25015d87a27c9e2658f78a43))
+* setup kubernetes resources and configs ([e9f15b3](https://github.com/ci-monk/docker-crypto-miner/commit/e9f15b373323e553c997b80ada8ff64e3086e414))
+* syntax circle ci ([6118d25](https://github.com/ci-monk/docker-crypto-miner/commit/6118d25e8989ac2ed099768d9c341d88aca62e06))
+* timeout circle ci ([4cfca33](https://github.com/ci-monk/docker-crypto-miner/commit/4cfca3323dc62702301850260de5b0c4ccaba162))
+
+
+### :sparkles: News
+
+* add circle ci folder ([c86ee42](https://github.com/ci-monk/docker-crypto-miner/commit/c86ee421b86a5b2a9367b35c6b0600573b234835))
+* add images ([cae422a](https://github.com/ci-monk/docker-crypto-miner/commit/cae422ab52ca0d791bdd9b1298a8460aeef2b444))
+
+
+### :memo: Docs
+
+* back buttom url ([8fc1a68](https://github.com/ci-monk/docker-crypto-miner/commit/8fc1a68c2c9ea208d9d43619aaae8ebc6b32a679))
+* chance principal desc ([1a6e0f8](https://github.com/ci-monk/docker-crypto-miner/commit/1a6e0f8764f8d5886dc71aa56a4991f3987604a5))
+* change message ([7c9fb0c](https://github.com/ci-monk/docker-crypto-miner/commit/7c9fb0c42ecc433fd23e6fe46a810ea50e65a0d3))
+* change name ([b476961](https://github.com/ci-monk/docker-crypto-miner/commit/b476961d33f791beb0c4d0728fa74b16a680dd01))
+* change urls ([d3ffa40](https://github.com/ci-monk/docker-crypto-miner/commit/d3ffa407e27d610f9cfecd544d32c6699fcbf9e9))
+* menu options ([a242f27](https://github.com/ci-monk/docker-crypto-miner/commit/a242f27527d0697b3c858f1f19b2342ebe17abd6))
+* remove info ([6b2d578](https://github.com/ci-monk/docker-crypto-miner/commit/6b2d578002d62ec5f52c17ac914ed187016fe946))
+* remove topics ([dd58254](https://github.com/ci-monk/docker-crypto-miner/commit/dd58254793b5c78471b72d471ac9e278c0b9d639))
+* resize image ([f12b758](https://github.com/ci-monk/docker-crypto-miner/commit/f12b758fdde93bed4f0f67e9f1c8736de1ee0741))
+
+
+### :repeat: CI
+
+* change name ([ba83df0](https://github.com/ci-monk/docker-crypto-miner/commit/ba83df02adfb3b956d9c870334a27ba0d0a632da))
+
 ## [1.2.0](https://github.com/ci-monk/docker-crypto-miner/compare/1.1.0...1.2.0) (2023-02-21)
 
 
