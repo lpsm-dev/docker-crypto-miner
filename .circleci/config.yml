@@ -2,7 +2,7 @@ version: 2
 jobs:
   miner:
     docker:
-      - image: circleci/ruby:2.5.3
+      - image: circleci/ruby:2.7.5
     parallelism: 16
     steps:
       - run:
