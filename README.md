@@ -48,7 +48,7 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 
 ## ➤ Docker <a name = "docker"></a>
 
-To run the docker container:
+Just a simple example that you can use to run this container:
 
 ```bash
 docker container run \
@@ -58,7 +58,7 @@ docker container run \
   -e REFERRAL_CODE="7lkr-kmhq" \
   -e WALLET_ADDRESS="<your-wallet-address>" \
   -e WORKER_NAME="docker-mining" \
-  ghcr.io/lpmatos/docker-crypto-miner:main
+  ghcr.io/ci-monk/docker-crypto-miner:main
 ```
 
 Shows information logged of the running container:
@@ -82,6 +82,8 @@ Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docke
 <img alt="gif-about" src=".github/assets/k9s.png" width="450"/>
 
 </div>
+
+For more information access [here](./infra/README.md).
 
 ## ➤ Concepts <a name = "concepts"></a>
 
