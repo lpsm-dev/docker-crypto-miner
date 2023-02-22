@@ -133,10 +133,6 @@ Pay attention to the images that you use for these purposes and protect yourself
 - [What is ASIC?](https://academy.bit2me.com/pt/quem-s%C3%A3o-mineiros-asic)
 - [Cloud Vultr](https://www.vultr.com)
 
-## ➤ Inspirations <a name = "inspirations"></a>
-
-- Thanks [@rundqvist](https://github.com/rundqvist/docker-unmineable) for sharing your project.
-
 ## ➤ Versioning <a name = "versioning"></a>
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
