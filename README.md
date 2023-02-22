@@ -37,7 +37,7 @@ This repository contains a setup with Docker that let you get from zero to minin
 
 The preferred way to configure XMRig is using a configuration file in JSON format because it is more flexible and user-friendly. CLI does not cover all features available and can be a limiting factor depending on the scenario.
 
-| Environment       	| Description                 	|
+| Name       	        | Description                 	|
 |-------------------	|-----------------------------	|
 | MINING_POOL       	| URL of mining server        	|
 | MINING_COIN       	| Coin to mining              	|
