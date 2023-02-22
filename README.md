@@ -79,7 +79,7 @@ Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docke
 
 <div align="center">
 
-<img alt="gif-about" src=".github/assets/k9s.png" width="450"/>
+<img alt="gif-about" src=".github/assets/k9s.png" width="550"/>
 
 </div>
 
