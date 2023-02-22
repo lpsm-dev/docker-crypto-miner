@@ -73,7 +73,15 @@ or
 docker logs --tail 1000 crypto-miner
 ```
 
-Click [here](https://github.com/lpmatos/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
+Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
+
+## ➤ Kubernetes <a name = "kubernetes"></a>
+
+<div align="center">
+
+<img alt="gif-about" src=".github/assets/k9s.png" width="450"/>
+
+</div>
 
 ## ➤ Concepts <a name = "concepts"></a>
 
@@ -116,7 +124,7 @@ The cpulimit is a tool that allow us to limit CPU usage per process. It gives us
 
 <div align="center">
 
-<img alt="gif-about" src="https://documents.trendmicro.com/images/TEx/articles/Docker%20Infection%20Chain-01.jpg" width="450"/>
+<img alt="gif-about" src=".github/assets/security.jpg" width="450"/>
 
 </div>
 

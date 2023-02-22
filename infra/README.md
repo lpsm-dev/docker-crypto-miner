@@ -21,7 +21,12 @@ Kubernetes is an open-source container orchestration platform designed to automa
 Helm is a tool that streamlines installing and managing Kubernetes applications. Think of it like Apt/Yum/Homebrew for K8S.
 
 ```bash
+docker build -t xmrig:main .
+kind load docker-image xmrig:main
 helm upgrade -i xmrig . --create-namespace -n xmrig -f values.yaml
+kubectl get ns
+kubectl get pod -n xmrig
+k9s
 ```
 
 ### Kind
@@ -30,5 +35,5 @@ Kind is a tool for running local Kubernetes clusters using Docker container “n
 
 ```bash
 kind create cluster --config kind.yaml
-kind delete cluster --config kind.yaml
+kind delete cluster
 ```

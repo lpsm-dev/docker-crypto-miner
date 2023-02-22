@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: ghcr.io/ci-monk/docker-xmrig-miner
+  repository: xmrig
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "main"
@@ -33,11 +33,11 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 2000m
-    memory: 2Gi
-  requests:
     cpu: 100m
-    memory: 1Gi
+    memory: 252Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi
 
 autoscaling:
   enabled: false

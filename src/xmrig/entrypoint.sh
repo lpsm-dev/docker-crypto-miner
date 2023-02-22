@@ -117,30 +117,25 @@ Welcome() {
 
 echo "$HEADER" && Welcome
 
-#!/bin/bash
-if [ -f /.dockerenv ]; then
-  Status "✨ Config miner"
+Status "✨ Config miner"
 
-  sed -i "s/MINING_POOL/$MINING_POOL/g" "$XMRIG_CONFIG_FILE"
-  sed -i "s/MINING_COIN/$MINING_COIN/g" "$XMRIG_CONFIG_FILE"
-  sed -i "s/WALLET_ADDRESS/$WALLET_ADDRESS/g" "$XMRIG_CONFIG_FILE"
-  sed -i "s/WORKER_NAME/$WORKER_NAME/g" "$XMRIG_CONFIG_FILE"
-  sed -i "s/REFERRAL_CODE/$REFERRAL_CODE/g" "$XMRIG_CONFIG_FILE"
+sed -i "s/MINING_POOL/$MINING_POOL/g" "$XMRIG_CONFIG_FILE"
+sed -i "s/MINING_COIN/$MINING_COIN/g" "$XMRIG_CONFIG_FILE"
+sed -i "s/WALLET_ADDRESS/$WALLET_ADDRESS/g" "$XMRIG_CONFIG_FILE"
+sed -i "s/WORKER_NAME/$WORKER_NAME/g" "$XMRIG_CONFIG_FILE"
+sed -i "s/REFERRAL_CODE/$REFERRAL_CODE/g" "$XMRIG_CONFIG_FILE"
 
-  if [[ "$MINING_AUTO_CONFIG" == "true" ]]; then
-    Status "✨ Starting miner with config"
-    xmrig -c "$XMRIG_CONFIG_FILE" $@ & sleep 3
-  else
-    Status "✨ Starting miner with cli params"
-    xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
-  fi
-
-  if [[ "$CPU_LIMIT_ENABLE" == "true" ]]; then
-    Status "✨ Enable CPU Limit"
-    cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
-  else
-    Status "✨ Disable CPU Limit"
-  fi
+if [[ "$MINING_AUTO_CONFIG" == "true" ]]; then
+  Status "✨ Starting miner with config"
+  xmrig -c "$XMRIG_CONFIG_FILE" $@ & sleep 3
 else
-  Status "✨ I'm living in real world!";
+  Status "✨ Starting miner with cli params"
+  xmrig -o "$MINING_POOL" -a rx -k -u "$MINING_COIN:$WALLET_ADDRESS.$WORKER_NAME#$REFERRAL_CODE" -p x & sleep 3
+fi
+
+if [[ "$CPU_LIMIT_ENABLE" == "true" ]]; then
+  Status "✨ Enable CPU Limit"
+  cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
+else
+  Status "✨ Disable CPU Limit"
 fi
