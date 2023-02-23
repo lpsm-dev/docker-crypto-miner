@@ -1,1 +1,0 @@
-# Configure terraform data values
