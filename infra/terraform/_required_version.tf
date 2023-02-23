@@ -2,5 +2,5 @@
  * Configure required Terraform version
  */
 terraform {
-  required_version = "~> 1.2.2"
+  required_version = "~> 1.3.0"
 }
