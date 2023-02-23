@@ -27,7 +27,7 @@ A Helm chart for XMRig Monero Miner
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"ghcr.io/ci-monk/docker-xmrig-miner"` |  |
+| image.repository | string | `"xmrig"` |  |
 | image.tag | string | `"main"` |  |
 | imagePullSecrets | list | `[]` |  |
 | nameOverride | string | `""` |  |
@@ -35,11 +35,12 @@ A Helm chart for XMRig Monero Miner
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
 | replicaCount | int | `3` |  |
-| resources.limits.cpu | string | `"2000m"` |  |
-| resources.limits.memory | string | `"2Gi"` |  |
-| resources.requests.cpu | string | `"100m"` |  |
-| resources.requests.memory | string | `"1Gi"` |  |
-| securityContext | object | `{}` |  |
+| resources.limits.cpu | string | `"100m"` |  |
+| resources.limits.memory | string | `"252Mi"` |  |
+| resources.requests.cpu | string | `"10m"` |  |
+| resources.requests.memory | string | `"128Mi"` |  |
+| securityContext.allowPrivilegeEscalation | bool | `false` |  |
+| securityContext.readOnlyRootFilesystem | bool | `true` |  |
 | tolerations | list | `[]` |  |
 
 ----------------------------------------------
