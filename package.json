@@ -29,6 +29,6 @@
     "@semantic-release/github": "8.0.7",
     "@semantic-release/release-notes-generator": "10.0.3",
     "commitizen": "4.3.0",
-    "semantic-release": "20.1.1"
+    "semantic-release": "20.1.3"
   }
 }
