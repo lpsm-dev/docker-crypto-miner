@@ -1,5 +1,5 @@
 # Stage 1: Build the XMRig binary
-FROM alpine:3.15 as builder
+FROM alpine:3.16 as builder
 
 ARG XMRIG_VERSION=v6.19.0
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
@@ -31,7 +31,7 @@ RUN git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL \
     && make -j$(nproc)
 
 # Stage 2: Copy XMRig binary into a smaller image
-FROM alpine:3.15
+FROM alpine:3.16
 
 RUN apk add --no-cache \
     bash \
