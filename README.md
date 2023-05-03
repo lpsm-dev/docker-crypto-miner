@@ -53,7 +53,7 @@ docker container run \
   -e REFERRAL_CODE="7lkr-kmhq" \
   -e WALLET_ADDRESS="<your-wallet-address>" \
   -e WORKER_NAME="docker-mining" \
-  ghcr.io/ci-monk/docker-crypto-miner:main
+  ghcr.io/lpsm-dev/docker-crypto-miner:main
 ```
 
 Shows information logged of the running container:
@@ -68,7 +68,7 @@ or
 docker logs --tail 1000 crypto-miner
 ```
 
-Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
+Click [here](https://github.com/lpsm-dev/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
 
 **Kubernetes**
 
