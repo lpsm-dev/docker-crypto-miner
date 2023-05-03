@@ -1,5 +1,56 @@
 # Semantic Versioning Changelog
 
+## [1.4.0](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.3.0...1.4.0) (2023-05-03)
+
+
+### :sparkles: News
+
+* add code of conduct ([e1a2a2e](https://github.com/lpsm-dev/docker-crypto-miner/commit/e1a2a2e4e5035f40398fb62c6c365e7fe4a29aea))
+* add kustomize setup ([f5e0ac8](https://github.com/lpsm-dev/docker-crypto-miner/commit/f5e0ac843efdc27aaf6d7bdb03dab351a0f3ed3c))
+* add makefile ([dbd754c](https://github.com/lpsm-dev/docker-crypto-miner/commit/dbd754c8f62bdaac2b9e8ce205f9ca00dce80a56))
+
+
+### :bug: Fix
+
+* Dockerfile to reduce vulnerabilities ([ec4a7b2](https://github.com/lpsm-dev/docker-crypto-miner/commit/ec4a7b2a70855550b5f645f9800785482190cb65))
+* Dockerfile to reduce vulnerabilities ([33daa09](https://github.com/lpsm-dev/docker-crypto-miner/commit/33daa0943258ccd338c81b129bc065e354d95a3f))
+* kustomize organization ([9a3db21](https://github.com/lpsm-dev/docker-crypto-miner/commit/9a3db21b81bec554993cd2baa1cc389940d9ba67))
+* package lock ([a1a372c](https://github.com/lpsm-dev/docker-crypto-miner/commit/a1a372cc045eefa7118eb7e08404752ba036d5d3))
+* remove folder ([b13fe8b](https://github.com/lpsm-dev/docker-crypto-miner/commit/b13fe8b447f71178d8148470804909be5058434c))
+* remove yarn ([7102f38](https://github.com/lpsm-dev/docker-crypto-miner/commit/7102f38861161a590f6a8814e34db9459f3da450))
+* reorganize includes ([40fc3ea](https://github.com/lpsm-dev/docker-crypto-miner/commit/40fc3ea7ceebce073d1f423484f460a489c3cc77))
+* run.sh script ([65032d8](https://github.com/lpsm-dev/docker-crypto-miner/commit/65032d8057a661441aa1084be17357ffac1bd318))
+* **script:** change lines ([59da95a](https://github.com/lpsm-dev/docker-crypto-miner/commit/59da95a6299eb16530dbe63fc97e7fd87a56663c))
+* setup files ([bcdbe62](https://github.com/lpsm-dev/docker-crypto-miner/commit/bcdbe62160481484665d8a70feaf172dee119240))
+* terraform setups ([c604ecf](https://github.com/lpsm-dev/docker-crypto-miner/commit/c604ecfef6f2b9b53ba1f9b5c67fcce80de50dd3))
+* terraform vars ([b27c6e8](https://github.com/lpsm-dev/docker-crypto-miner/commit/b27c6e80cd46fb746d4142199a2fe9e35461c028))
+* tf setup ([feeb0a6](https://github.com/lpsm-dev/docker-crypto-miner/commit/feeb0a62977543fa301e2b52cb66a10772f6237b))
+* values helm ([120f3ee](https://github.com/lpsm-dev/docker-crypto-miner/commit/120f3ee47a16c4bad2f9cbbee65416cd3c30bc75))
+
+
+### :memo: Docs
+
+* add info ([e063d2d](https://github.com/lpsm-dev/docker-crypto-miner/commit/e063d2d141e220640640698c64ae9c0ce7104181))
+* add more section ([d09c531](https://github.com/lpsm-dev/docker-crypto-miner/commit/d09c53146e77cb6a5d20bc0714c922d6d1c4ceba))
+* add setup style ([167a1dc](https://github.com/lpsm-dev/docker-crypto-miner/commit/167a1dcb39753475f69f75d24f7e5ea82dce4e1c))
+* change badge icon ([9a79ce1](https://github.com/lpsm-dev/docker-crypto-miner/commit/9a79ce15399893ccf65dae99f578e80fb8617379))
+* change content readme ([65502f2](https://github.com/lpsm-dev/docker-crypto-miner/commit/65502f2abe247d10f9c7938c1dd049e864add0b2))
+* change desc ([9181145](https://github.com/lpsm-dev/docker-crypto-miner/commit/9181145de5bad1d5d80dfca6097ebd85ba6411d5))
+* change readme ([93eb95e](https://github.com/lpsm-dev/docker-crypto-miner/commit/93eb95ed6cddd7578a67d32b82aef8ca88d355ee))
+* fix call link here ([9e3cc50](https://github.com/lpsm-dev/docker-crypto-miner/commit/9e3cc50d01210d9ab286fadbeca3230a1667864e))
+* image size ([d320980](https://github.com/lpsm-dev/docker-crypto-miner/commit/d320980fb7d2ab5fc031d6c3c696ac8f81f0e523))
+* remove security mk topic 2 ([8dec243](https://github.com/lpsm-dev/docker-crypto-miner/commit/8dec243f8ff6a7e820eb9a82fc641c9718477f94))
+* remove topic ([ce93451](https://github.com/lpsm-dev/docker-crypto-miner/commit/ce934510b0b3ab6ead76d85e4280dce63a457cf1))
+* rename image docke ([07b7c80](https://github.com/lpsm-dev/docker-crypto-miner/commit/07b7c8052090eddc843221e429ed998c71a2cf10))
+* rename topic ([291187c](https://github.com/lpsm-dev/docker-crypto-miner/commit/291187ce4423d450075b7dfc7b807a0af9868c06))
+
+
+### :repeat: CI
+
+* fix smr ([3be5497](https://github.com/lpsm-dev/docker-crypto-miner/commit/3be5497fbf89b5d3281a3d7ab45127b2d579b3b7))
+* others templates ([b79716d](https://github.com/lpsm-dev/docker-crypto-miner/commit/b79716dfce472ee4245c567303f6b88354431ea0))
+* simple empty line ([d12f65c](https://github.com/lpsm-dev/docker-crypto-miner/commit/d12f65cc702521c3fec11112dfd81b1e0a511bb9))
+
 ## [1.3.0](https://github.com/ci-monk/docker-crypto-miner/compare/1.2.0...1.3.0) (2023-02-22)
 
 
