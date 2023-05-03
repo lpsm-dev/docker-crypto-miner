@@ -20,11 +20,13 @@
 
 ## ➤ Important Note
 
-**This tool is for educational and ethical practices only. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter for mining.**
+**This tool is only for educational and ethical practices. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter.**
 
 ## ➤ Description
 
-This repository contains a setup with Docker that let you get from zero to mining in around 5 minutes on any Linux host. CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
+This repository contains a Docker setup that lets you go from zero to mining in about 5 minutes on any Linux host.
+
+CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
 
 ## ➤ Setup
 
