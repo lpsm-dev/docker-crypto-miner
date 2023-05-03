@@ -1,13 +1,7 @@
 {
   "_comment": "this project is not a node.js one, package.json is just used to define some metadata",
   "scripts": {
-    "cm": "git cz",
-    "precommit": "pre-commit run -a",
-    "preinstall": "npx force-resolutions",
-    "secrets": "gitleaks detect --config .github/config/.gitleaks.toml --verbose",
-    "docker-lint": "docker run --rm -i ghcr.io/hadolint/hadolint < Dockerfile",
-    "docker-inspect": "docker image build -t teste:1.0.0 . && dive teste:1.0.0 --config .github/config/.dive-ci.yaml --ci",
-    "docker-scan": "docker image build -t teste:1.0.0 . && trivy image teste:1.0.0"
+    "commit": "commit"
   },
   "commitlint": {
     "extends": [
