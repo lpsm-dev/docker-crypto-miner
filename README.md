@@ -26,7 +26,7 @@
 
 This repository contains a Docker setup that lets you go from zero to mining in about 5 minutes on any Linux host.
 
-CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about [profitability here](https://www.nicehash.com/profitability-calculator).
+CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about profitability [here](https://www.nicehash.com/profitability-calculator).
 
 ## ➤ Setup
 
