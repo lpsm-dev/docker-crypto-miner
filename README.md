@@ -41,7 +41,9 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 | WORKER_NAME       	| Worker name                 	|
 | XMRIG_CONFIG_FILE 	| XMRig config file reference 	|
 
-## ➤ Docker
+## ➤ Setup
+
+**Docker**
 
 Just a simple example that you can use to run this container:
 
@@ -70,7 +72,7 @@ docker logs --tail 1000 crypto-miner
 
 Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
 
-## ➤ Kubernetes
+**Kubernetes**
 
 <div align="center">
 
@@ -78,7 +80,7 @@ Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docke
 
 </div>
 
-For more information access [here](./infra/README.md).
+For more information [here](./infra/README.md).
 
 ## ➤ Concepts
 
