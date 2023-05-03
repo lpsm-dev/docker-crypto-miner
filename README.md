@@ -41,8 +41,6 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 | WORKER_NAME       	| Worker name                 	|
 | XMRIG_CONFIG_FILE 	| XMRig config file reference 	|
 
-## ➤ Setup
-
 **Docker**
 
 Just a simple example that you can use to run this container:
