@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="gif-header" src="https://github.com/ci-monk/personal-resume/blob/main/assets/flow.gif" width="225"/>
+<img alt="gif-header" src="https://github.com/lpsm-dev/personal-resume/blob/main/assets/coding.gif" width="225"/>
 
 <h2>✨ Docker Crypto Miner ✨</h2>
 
@@ -9,7 +9,7 @@
 
 ---
 
-<img alt="gif-about" src="https://github.com/ci-monk/personal-resume/blob/main/assets/coding.gif" width="275"/>
+<img alt="gif-about" src="https://github.com/lpsm-dev/personal-resume/blob/main/assets/hey.gif" width="300"/>
 
 <h4>A containerized solution for mining cryptocurrencies using <a href=https://github.com/xmrig/xmrig>XMRig</a> miner</h4>
 
@@ -71,7 +71,7 @@ Click [here](https://github.com/ci-monk/docker-crypto-miner/pkgs/container/docke
 
 <div align="center">
 
-<img alt="gif-about" src=".github/assets/k9s.png" width="550"/>
+<img alt="gif-about" src=".github/assets/k9s.png" width="625"/>
 
 </div>
 

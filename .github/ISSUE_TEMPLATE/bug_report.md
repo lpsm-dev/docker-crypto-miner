@@ -14,9 +14,11 @@ about: Create a report to help us improve
 #### Expected behaviour
 
 > Tell me what should happen
+
 #### Actual behaviour
 
 > Tell me what happens instead
+
 ### Configuration
 
 * Platform (Debian 9, Ubuntu 18.04, ...) :

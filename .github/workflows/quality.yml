@@ -1,0 +1,36 @@
+name: CI - Quality
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Check out code from GitHub
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Commit Lint
+        uses: wagoid/commitlint-github-action@v5
+        continue-on-error: true
+
+      - name: Secret Detection
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_CONFIG: ${{ github.workspace }}/.github/config/.gitleaks.toml
+          GITLEAKS_ENABLE_COMMENTS: true
+        continue-on-error: false
+
+      - name: Hadolint
+        uses: hadolint/hadolint-action@v3.1.0
+        with:
+          dockerfile: Dockerfile
+          recursive: false
+          config: ${{ github.workspace }}/.github/config/.hadolint.yml
+          verbose: true
