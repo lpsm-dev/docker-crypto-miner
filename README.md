@@ -60,6 +60,14 @@ docker container run \
   ghcr.io/lpsm-dev/docker-crypto-miner:main
 ```
 
+Click [here](https://github.com/lpsm-dev/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
+</p>
+</details>
+
+<details>
+<summary>Logs</summary>
+<p>
+
 Shows information logged of the running container:
 
 ```bash
@@ -71,10 +79,9 @@ or
 ```bash
 docker logs --tail 1000 crypto-miner
 ```
-
-Click [here](https://github.com/lpsm-dev/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
 </p>
 </details>
+
 
 **Kubernetes**
 
