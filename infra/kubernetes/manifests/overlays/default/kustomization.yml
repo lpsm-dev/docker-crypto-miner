@@ -6,3 +6,4 @@ commonLabels:
   environment: default
 resources:
 - ../../base
+- deployment.yaml
