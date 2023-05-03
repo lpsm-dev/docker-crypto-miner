@@ -1,4 +1,4 @@
-# [❮ Back](https://github.com/ci-monk/docker-crypto-miner)
+# [❮ Back](https://github.com/lpsm-dev/docker-crypto-miner)
 
 ## ➤ Topics
 
@@ -8,15 +8,15 @@
 
 ## ➤ Explain
 
-### Terraform
+**Terraform**
 
 Terraform is an infrastructure as code (IaC) tool that allows you to build, change, and version infrastructure safely and efficiently.
 
-### Kubernetes
+**Kubernetes**
 
 Kubernetes is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
 
-### Helm
+**Helm**
 
 Helm is a tool that streamlines installing and managing Kubernetes applications. Think of it like Apt/Yum/Homebrew for K8S.
 
@@ -29,7 +29,7 @@ kubectl get pod -n xmrig
 k9s
 ```
 
-### Kind
+**Kind**
 
 Kind is a tool for running local Kubernetes clusters using Docker container “nodes”. Kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
 
