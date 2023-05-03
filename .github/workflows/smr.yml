@@ -33,7 +33,6 @@ jobs:
 
       - name: Release
         run: |
-          cd ./code
           cp ${{ github.workspace }}/.github/config/.releaserc.json .
           npx semantic-release
         env:
