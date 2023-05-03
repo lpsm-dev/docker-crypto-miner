@@ -1,12 +1,12 @@
 # [❮ Back](https://github.com/ci-monk/docker-crypto-miner)
 
-## Topics
+## ➤ Topics
 
 * ➔ [Setup Terraform](./terraform)
 * ➔ [Setup Kubernetes Manifests](./kubernetes/manifests)
 * ➔ [Setup Kubernetes Helm](./kubernetes/helm)
 
-## Explain
+## ➤ Explain
 
 ### Terraform
 
