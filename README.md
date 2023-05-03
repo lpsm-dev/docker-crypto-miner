@@ -136,7 +136,7 @@ A mining rig is a mining platform. The platform could be a dedicated miner where
 
 The cpulimit is a tool that allow us to limit CPU usage per process. It gives us some ways to identify the desired process, either by process name, PID or executable path. It's useful for controlling batch jobs when you don't want them eat too many CPU cycles. The purpose is to prevent a process from running for more than a specified proportion of time. In addition, it's also able to adapt to the overall system load dynamically and quickly.
 
-## ➤ Security
+### Security
 
 <div align="center">
 
