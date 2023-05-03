@@ -5,3 +5,6 @@ metadata:
   name: xmrig-miner
   labels:
     app: xmrig-miner
+spec:
+  finalizers:
+  - kubernetes

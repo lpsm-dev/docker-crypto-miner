@@ -10,7 +10,7 @@ A Helm chart for XMRig Monero Miner
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| CI Monk | <ci-monk@protonmail.com> |  |
+| Lucca | <lpsm-dev@protonmail.com> |  |
 
 ## Source Code
 
