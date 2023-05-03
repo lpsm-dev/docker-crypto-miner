@@ -43,6 +43,10 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 
 **Docker**
 
+<details>
+<summary>Container</summary>
+<p>
+
 Just a simple example that you can use to run this container:
 
 ```bash
@@ -69,8 +73,14 @@ docker logs --tail 1000 crypto-miner
 ```
 
 Click [here](https://github.com/lpsm-dev/docker-crypto-miner/pkgs/container/docker-crypto-miner/versions) to see available image tags.
+</p>
+</details>
 
 **Kubernetes**
+
+<details>
+<summary>Pods</summary>
+<p>
 
 <div align="center">
 
@@ -79,6 +89,8 @@ Click [here](https://github.com/lpsm-dev/docker-crypto-miner/pkgs/container/dock
 </div>
 
 For more information [here](./infra/README.md).
+</p>
+</details>
 
 ## ➤ Concepts
 
