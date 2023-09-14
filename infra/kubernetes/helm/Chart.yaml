@@ -1,3 +1,4 @@
+---
 apiVersion: v2
 name: xmrig
 description: A Helm chart for XMRig Monero Miner
@@ -7,7 +8,7 @@ appVersion: "1.16.0"
 icon: https://xmrig.com/assets/img/xmrig-logo.svg
 home: https://xmrig.com
 sources:
-  - https://github.com/xmrig/xmrig
+- https://github.com/xmrig/xmrig
 maintainers:
-  - name: Lucca
-    email: lpsm-dev@protonmail.com
+- name: Lucca
+  email: lpsm-dev@protonmail.com
