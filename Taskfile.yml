@@ -1,0 +1,32 @@
+---
+# Taskfile to be used with `task` binary.
+# Usage:
+# - Install with `asdf`: `asdf plugin add task`
+# - List available tasks with: `task --list`
+version: "3"
+
+vars:
+  CLEAR: tput reset
+  PATH_ERROR: is not installed or correctly configured in PATH.
+
+includes:
+  precommit: .github/taskfiles/pre-commit.yml
+
+tasks:
+  default:
+    silent: true
+    aliases: [commands]
+    cmds:
+    - task --list
+
+  clear:
+    cmds:
+    - sleep 0.1 && {{.CLEAR}}
+
+  gitleaks:
+    desc: Performs secret-detection in git repo using gitleaks
+    preconditions:
+    - sh: "which gitleaks"
+      msg: "gitleaks {{.PATH_ERROR}}"
+    cmds:
+    - gitleaks detect --verbose .
