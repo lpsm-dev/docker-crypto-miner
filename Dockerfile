@@ -5,7 +5,7 @@ ARG XMRIG_VERSION=v6.19.0
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF"
 
-RUN apk add git make cmake libstdc++ gcc g++ automake libtool autoconf linux-headers
+RUN apk add --no-cache git make cmake libstdc++ gcc g++ automake libtool autoconf linux-headers
 
 WORKDIR /tmp/install
 
