@@ -1,8 +1,11 @@
+<!-- BEGIN_TF_DOCS -->
 <div align="center">
 
-<img alt="gif-header" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/assets/coding.gif" width="225"/>
+<a name="readme-top"></a>
 
-<h2>✨ Docker Crypto Miner ✨</h2>
+<img alt="gif-header" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-header.gif" width="225"/>
+
+<h2>Docker Crypto Miner</h2>
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)]()
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)]()
@@ -10,9 +13,18 @@
 
 ---
 
-<img alt="gif-about" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/assets/hey.gif" width="300"/>
+<img alt="gif-about" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-about.gif" width="225"/>
 
-<h4>A containerized solution for mining cryptocurrencies using <a href=https://github.com/xmrig/xmrig>XMRig</a> miner</h4>
+<p>A containerized solution for mining cryptocurrencies using <a href=https://github.com/xmrig/xmrig>XMRig</a> miner</p>
+
+<p>
+  <a href="#-getting-started-">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-ideas-">Ideas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-links-">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-versioning-">Versioning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-troubleshooting-">Troubleshooting</a>
+</p>
+
 
 </div>
 
@@ -22,11 +34,15 @@
 
 **This tool is only for educational and ethical practices. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter.**
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ➤ Description
 
 This repository contains a Docker setup that lets you go from zero to mining in about 5 minutes on any Linux host.
 
 CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about profitability [here](https://www.nicehash.com/profitability-calculator).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ➤ Setup
 
@@ -99,6 +115,8 @@ For more information [here](./infra/README.md).
 </p>
 </details>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ➤ Concepts
 
 This section aims to describe at a high level what the tools we use are and how we use them, without reproducing documentation that is better written (and more up to date) in the repositories and websites of these tools themselves. It's recommended to familiarize yourself with these tools as early as possible.
@@ -146,6 +164,8 @@ The cpulimit is a tool that allow us to limit CPU usage per process. It gives us
 
 Pay attention to the images that you use for these purposes and protect yourself from cryptojacking. Containers have become frequent targets of threat actors who conduct malicious cryptocurrency mining and other attacks. Last year, Trend Micro came across activities of cryptocurrency miners that were deployed as rogue containers using a community-distributed image published on Docker Hub. In May, researchers found an open directory containing a malicious cryptocurrency miner and Distributed Denial of Service (DDoS) bot that targeted open Docker daemon ports. In the attack, an Alpine Linux container was created to host the cryptocurrency miner and DDoS bot.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ➤ Links
 
 - [XMRig configuration wizard](https://xmrig.com/wizard)
@@ -157,30 +177,37 @@ Pay attention to the images that you use for these purposes and protect yourself
 - [What is ASIC?](https://academy.bit2me.com/pt/quem-s%C3%A3o-mineiros-asic)
 - [Cloud Vultr](https://www.vultr.com)
 
-## ➤ Author
-
-👤 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
-
->
-> * Linktree: https://linktr.ee/lpmatos
->
-
-## ➤ Versioning
-
-To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ➤ Donations
 
 Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations).
 
-## ➤ Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ➤ Versioning <a name="#-versioning"></a>
+
+To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ➤ Troubleshooting <a name="#-troubleshooting"></a>
+
+If you have any problems, [open an issue in this project](https://github.com/lpsm-dev/docker-crypto-miner/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ➤ Show your support <a name="-show-your-support"></a>
 
 <div align="center">
 
 Give me a ⭐️ if this project helped you!
 
-<img alt="star-wars" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/assets/yoda.gif" width="225"/>
+<img alt="gif-footer" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/yoda.gif" width="225"/>
 
 Made with 💜 by [me](https://github.com/lpsm-dev) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- END_TF_DOCS -->
