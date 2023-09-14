@@ -40,15 +40,15 @@
 
 ## ➤ Description
 
-This repository contains a Docker setup that lets you go from zero to mining in about 5 minutes on any Linux host.
+This repository contains a containerized setup of the xmrig tool, which allows you to go from zero to mining in about 5 minutes on any architecture running containers.
 
-CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or `Equihash`. Find out more about profitability [here](https://www.nicehash.com/profitability-calculator).
+CPU mining can be profitable using algorithms such as: `RandomX`, `Cryptonight` or `Equihash`. Learn more about profitability [here](https://www.nicehash.com/profitability-calculator).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ➤ Setup
 
-The preferred way to configure XMRig is using a configuration file in JSON format because it is more flexible and user-friendly. CLI does not cover all features available and can be a limiting factor depending on the scenario.
+The preferred way to configure XMRig is using a configuration file in JSON format, because it is more flexible and easier to use. The CLI doesn't cover all the features available and can be a limiting factor, depending on the scenario.
 
 | Name                  | Description                   |
 |-------------------    |-----------------------------  |
@@ -121,11 +121,11 @@ For more information [here](./infra/README.md).
 
 ## ➤ Concepts
 
-This section aims to describe at a high level what the tools we use are and how we use them, without reproducing documentation that is better written (and more up to date) in the repositories and websites of these tools themselves. It's recommended to familiarize yourself with these tools as early as possible.
+This section aims to describe at a high level which tools we use and how we use them, without reproducing documentation that is better written (and more up-to-date) in the repositories and websites of the tools themselves. It is recommended that you familiarize yourself with these tools as soon as possible.
 
 ### XMRig
 
-Basically XMRig is a free and open source mining program. It can be installed on Windows, Linux and macOS, and allows you to mine the RandomX algorithm. Here is a brief example of the run command:
+Basically, XMRig is a free, open-source mining program. It can be installed on Windows, Linux and macOS, and allows you to mine using the RandomX algorithm. Here's a brief example of the run command:
 
 ```bash
 xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u COIN:YOUR_ADDRESS.WORKER_NAME#REFERRAL_CODE -p x pause
@@ -138,23 +138,23 @@ xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u COIN:YOUR_ADDRESS.WORKER_NAME#RE
 
 ### Unmineable
 
-The unmineable is a mining pool that enables anyone to become a miner using a personal computer.
+Unmineable is a mining pool that allows anyone to become a miner using a personal computer.
 
 ### ASIC
 
-The acronym ASIC describes a series of computer equipment designed from start to finish to deliver maximum performance in cryptocurrency mining tasks.
+The acronym ASIC describes a series of computer devices designed from start to finish to provide maximum performance in cryptocurrency mining tasks.
 
 ### RandomX
 
-RandomX is a proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RandomX uses random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware.
+RandomX is a proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RandomX uses random code execution (hence the name) along with various hard memory techniques to minimize the efficiency advantage of specialized hardware.
 
 ### Mining Rig
 
-A mining rig is a mining platform. The platform could be a dedicated miner where it was purchased, built and operated specifically for mining, or it could be a computer that meets other needs, such as a gaming system, and is used to mine only on a part-time.
+A mining rig is a mining platform. The rig can be a dedicated miner, where it has been bought, built and operated specifically for mining, or it can be a computer that fulfills other needs, such as a gaming system, and is used to mine only part-time.
 
 ### CPU Limit
 
-The cpulimit is a tool that allow us to limit CPU usage per process. It gives us some ways to identify the desired process, either by process name, PID or executable path. It's useful for controlling batch jobs when you don't want them eat too many CPU cycles. The purpose is to prevent a process from running for more than a specified proportion of time. In addition, it's also able to adapt to the overall system load dynamically and quickly.
+Cpulimit is a tool that allows us to limit CPU usage by process. It gives us a few ways to identify the desired process, either by process name, PID or executable path. It's useful for controlling batch tasks when you don't want them to consume too many CPU cycles. The aim is to prevent a process from running for more than a certain amount of time. It is also able to adapt to the overall system load dynamically and quickly.
 
 ### Security
 
@@ -164,7 +164,7 @@ The cpulimit is a tool that allow us to limit CPU usage per process. It gives us
 
 </div>
 
-Pay attention to the images that you use for these purposes and protect yourself from cryptojacking. Containers have become frequent targets of threat actors who conduct malicious cryptocurrency mining and other attacks. Last year, Trend Micro came across activities of cryptocurrency miners that were deployed as rogue containers using a community-distributed image published on Docker Hub. In May, researchers found an open directory containing a malicious cryptocurrency miner and Distributed Denial of Service (DDoS) bot that targeted open Docker daemon ports. In the attack, an Alpine Linux container was created to host the cryptocurrency miner and DDoS bot.
+Pay attention to the images you use for these purposes and protect yourself against cryptojacking. Containers have become frequent targets for threat actors carrying out malicious cryptocurrency mining and other attacks. Last year, Trend Micro came across activities by cryptocurrency miners that were implemented as rogue containers using a community-distributed image published on Docker Hub. In May, researchers found an open directory that contained a malicious cryptocurrency miner and a distributed denial of service (DDoS) bot that targeted open Docker daemon ports. In the attack, an Alpine Linux container was created to host the cryptocurrency miner and the DDoS bot.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,7 +183,7 @@ Pay attention to the images that you use for these purposes and protect yourself
 
 ## ➤ Donations
 
-If my work has impacted your life in a positive way and you'd like to buy me a coffee (or a hundred), that'd be much appreciated!
+If my work has had a positive impact on your life and you want to buy me a coffee (or a hundred), you'll be very grateful!
 
 <a href="https://www.blockchain.com/pt/btc/address/bc1qhfnh66d2wnveg3s932dz4gtmdqljrj67hs7hta">
   <img alt="BTC Address" src="https://img.shields.io/badge/BTC%20Address-black?style=for-the-badge&logo=bitcoin&logoColor=white">
