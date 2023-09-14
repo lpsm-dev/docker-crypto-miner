@@ -1,3 +1,4 @@
+---
 name: Manual - Docker Build
 
 on:
@@ -50,7 +51,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GH_BUILD_TOKEN }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta

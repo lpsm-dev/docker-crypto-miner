@@ -22,7 +22,7 @@ K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of
 
 **Kind**
 
-Kind is a tool for running local Kubernetes clusters using Docker container “nodes”. Kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
+Kind is a tool for running local Kubernetes clusters using Docker container "nodes". Kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
 
 ```bash
 kind create cluster --config kind.yaml

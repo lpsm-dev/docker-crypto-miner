@@ -1,10 +1,11 @@
+---
 name: Manual - Semantic Release
 
 on:
   workflow_dispatch:
     inputs:
       git-ref:
-        description: Git Branch Reference
+        description: Git branch reference
         default: main
         required: true
 
@@ -13,29 +14,30 @@ jobs:
     name: Release
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-        if: github.event.inputs.git-ref == 'main'
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+      if: github.event.inputs.git-ref == 'main'
 
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          registry-url: https://registry.npmjs.org
-        if: github.event.inputs.git-ref == 'main'
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: "lts/*"
+      if: github.event.inputs.git-ref == 'main'
 
-      - name: Install dependencies
-        run: npm ci --cache .npm --prefer-offline
-        if: github.event.inputs.git-ref == 'main'
+    - name: Copy rules
+      run: |
+        cp .github/config/.releaserc.json .
 
-      - name: Release
-        run: |
-          cp ${{ github.workspace }}/.github/config/.releaserc.json .
-          npx semantic-release
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: github.event.inputs.git-ref == 'main'
+    - name: Install dependencies
+      run: npm install
+      if: github.event.inputs.git-ref == 'main'
+
+    - name: Release
+      run: npx semantic-release
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      if: github.event.inputs.git-ref == 'main'

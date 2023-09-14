@@ -48,14 +48,14 @@ CPU mining can be profitable using algorithmns like: `RandomX`, `Cryptonight` or
 
 The preferred way to configure XMRig is using a configuration file in JSON format because it is more flexible and user-friendly. CLI does not cover all features available and can be a limiting factor depending on the scenario.
 
-| Name       	        | Description                 	|
-|-------------------	|-----------------------------	|
-| MINING_POOL       	| URL of mining server        	|
-| MINING_COIN       	| Coin to mining              	|
-| REFERRAL_CODE     	| Param to educe mining rater 	|
-| WALLET_ADDRESS    	| Wallet address              	|
-| WORKER_NAME       	| Worker name                 	|
-| XMRIG_CONFIG_FILE 	| XMRig config file reference 	|
+| Name                  | Description                   |
+|-------------------    |-----------------------------  |
+| MINING_POOL           | URL of mining server          |
+| MINING_COIN           | Coin to mining                |
+| REFERRAL_CODE         | Param to educe mining rater   |
+| WALLET_ADDRESS        | Wallet address                |
+| WORKER_NAME           | Worker name                   |
+| XMRIG_CONFIG_FILE     | XMRig config file reference   |
 
 **Docker**
 
@@ -181,7 +181,11 @@ Pay attention to the images that you use for these purposes and protect yourself
 
 ## ➤ Donations
 
-Please consider [donating to the xmrig team](https://github.com/xmrig/xmrig#donations).
+If my work has impacted your life in a positive way and you'd like to buy me a coffee (or a hundred), that'd be much appreciated!
+
+<a href="https://www.blockchain.com/pt/btc/address/bc1qhfnh66d2wnveg3s932dz4gtmdqljrj67hs7hta">
+  <img alt="BTC Address" src="https://img.shields.io/badge/BTC%20Address-black?style=for-the-badge&logo=bitcoin&logoColor=white">
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
