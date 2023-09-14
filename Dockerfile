@@ -1,21 +1,11 @@
 # Stage 1: Build the XMRig binary
-FROM alpine:3 as builder
+FROM public.ecr.aws/docker/library/alpine:3.15.10 as builder
 
 ARG XMRIG_VERSION=v6.19.0
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF"
 
-RUN apk add --no-cache \
-    git \
-    make \
-    cmake \
-    libstdc++ \
-    gcc \
-    g++ \
-    automake \
-    libtool \
-    autoconf \
-    linux-headers
+RUN apk add git make cmake libstdc++ gcc g++ automake libtool autoconf linux-headers
 
 WORKDIR /tmp/install
 
@@ -31,7 +21,7 @@ RUN git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL \
     && make -j$(nproc)
 
 # Stage 2: Copy XMRig binary into a smaller image
-FROM alpine:3
+FROM public.ecr.aws/docker/library/alpine:3.15.10
 
 RUN apk add --no-cache \
     bash \

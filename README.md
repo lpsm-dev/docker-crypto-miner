@@ -32,7 +32,9 @@
 
 ## ➤ Important Note
 
-**This tool is only for educational and ethical practices. The developers are not responsible if the tool is misused by an individual. Use at your own risk. If you plan to mine on a cloud check the terms and conditions before you start. The same applies if you are using private equipment or an on-site datacenter.**
+**This repository is intended for educational and ethical purposes only. The creators are not responsible for incorrect use by any individual. Use it knowing that you will be doing so at your own risk.**
+
+**If you plan to mine in a cloud, check your provider's terms and conditions before you start. The same applies if you are using private equipment or an on-site data center.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
