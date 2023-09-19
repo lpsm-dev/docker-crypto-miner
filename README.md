@@ -18,13 +18,14 @@
 <p>A containerized solution for mining cryptocurrencies using <a href=https://github.com/xmrig/xmrig>XMRig</a> miner</p>
 
 <p>
+  <a href="#-description-">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-getting-started-">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-ideas-">Ideas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-concepts-">Concepts</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-links-">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-donations-">Donations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-versioning-">Versioning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-troubleshooting-">Troubleshooting</a>
 </p>
-
 
 </div>
 
@@ -48,6 +49,8 @@ CPU mining can be profitable using algorithms such as: `RandomX`, `Cryptonight` 
 
 ## ➤ Getting Started <a name="#-getting-started"></a>
 
+### Setup
+
 To configure your system for the development of this project, follow the steps below:
 
 - Install [asdf](https://asdf-vm.com/) to manage runtime dependencies.
@@ -60,7 +63,7 @@ asdf install
 
 - Run task from the root of the repository to see available commands. We use task in place of make for this project. See [Taskfile.yml](Taskfile.yml) for more information.
 
-## ➤ Setup
+### Variables
 
 The preferred way to configure XMRig is using a configuration file in JSON format, because it is more flexible and easier to use. The CLI doesn't cover all the features available and can be a limiting factor, depending on the scenario.
 
@@ -72,6 +75,8 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 | WALLET_ADDRESS        | Wallet address                |
 | WORKER_NAME           | Worker name                   |
 | XMRIG_CONFIG_FILE     | XMRig config file reference   |
+
+### Running
 
 **Docker**
 
