@@ -1,2 +1,4 @@
 gitleaks 8.18.0
+hadolint 2.12.0
+pre-commit 3.4.0
 task 3.30.0

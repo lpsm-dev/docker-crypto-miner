@@ -46,6 +46,20 @@ CPU mining can be profitable using algorithms such as: `RandomX`, `Cryptonight` 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## ➤ Getting Started <a name="#-getting-started"></a>
+
+To configure your system for the development of this project, follow the steps below:
+
+- Install [asdf](https://asdf-vm.com/) to manage runtime dependencies.
+- Install runtime dependencies.
+
+```bash
+cut -d' ' -f1 .tool-versions | xargs -I{} sh -c 'asdf plugin add "$1"' -- {}
+asdf install
+```
+
+- Run task from the root of the repository to see available commands. We use task in place of make for this project. See [Taskfile.yml](Taskfile.yml) for more information.
+
 ## ➤ Setup
 
 The preferred way to configure XMRig is using a configuration file in JSON format, because it is more flexible and easier to use. The CLI doesn't cover all the features available and can be a limiting factor, depending on the scenario.
