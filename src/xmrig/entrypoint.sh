@@ -117,8 +117,6 @@ Welcome() {
 
 echo "$HEADER" && Welcome
 
-Status "✨ Config miner"
-
 sed -i "s/MINING_POOL/$MINING_POOL/g" "$XMRIG_CONFIG_FILE"
 sed -i "s/MINING_COIN/$MINING_COIN/g" "$XMRIG_CONFIG_FILE"
 sed -i "s/WALLET_ADDRESS/$WALLET_ADDRESS/g" "$XMRIG_CONFIG_FILE"
@@ -134,8 +132,8 @@ else
 fi
 
 if [[ "$CPU_LIMIT_ENABLE" == "true" ]]; then
-  Status "✨ Enable CPU Limit"
+  Status "✨ Enable CPU limit"
   cpulimit -l $CPU_LIMIT -p $(pidof xmrig) -z
 else
-  Status "✨ Disable CPU Limit"
+  Status "✨ Disable CPU limit"
 fi
