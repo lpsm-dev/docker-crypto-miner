@@ -21,12 +21,20 @@ tasks:
 
   clear:
     cmds:
-    - sleep 0.1 && {{.CLEAR}}
+    - sleep 0.1 && {{ .CLEAR }}
 
   gitleaks:
     desc: Performs secret-detection in git repo using gitleaks
     preconditions:
     - sh: "which gitleaks"
-      msg: "gitleaks {{.PATH_ERROR}}"
+      msg: "gitleaks {{ .PATH_ERROR }}"
     cmds:
-    - gitleaks detect --source . --no-git --verbose
+    - gitleaks detect --source=. --verbose
+
+  yamllint:
+    desc: Run a linter for YAML files
+    preconditions:
+    - sh: "which yamllint"
+      msg: "yamllint {{.PATH_ERROR}}"
+    cmds:
+    - yamllint -c .github/config/.yamllint.yml .
