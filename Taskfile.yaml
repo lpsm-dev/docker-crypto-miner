@@ -10,7 +10,7 @@ vars:
   PATH_ERROR: is not installed or correctly configured in PATH.
 
 includes:
-  precommit: .github/taskfiles/pre-commit.yml
+  precommit: .github/taskfiles/pre-commit.yaml
 
 tasks:
   default:
@@ -24,17 +24,17 @@ tasks:
     - sleep 0.1 && {{ .CLEAR }}
 
   gitleaks:
-    desc: Performs secret-detection in git repo using gitleaks
+    desc: Detecting secrets in a git repo with the help of GitLeaks
     preconditions:
     - sh: "which gitleaks"
       msg: "gitleaks {{ .PATH_ERROR }}"
     cmds:
-    - gitleaks detect --source=. --verbose
+    - gitleaks detect --source={{ .TASKFILE_DIR }} --verbose
 
   yamllint:
-    desc: Run a linter for YAML files
+    desc: Running a linter for YAML files
     preconditions:
     - sh: "which yamllint"
       msg: "yamllint {{.PATH_ERROR}}"
     cmds:
-    - yamllint -c .github/config/.yamllint.yml .
+    - yamllint -c {{ .TASKFILE_DIR }}/.github/config/.yamllint.yaml .
