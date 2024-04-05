@@ -9,7 +9,7 @@ RUN apk add --no-cache git make cmake libstdc++ gcc g++ automake libtool autocon
 
 WORKDIR /tmp/install
 
-RUN git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL \
+RUN git clone --single-branch --depth 1 --branch="$XMRIG_VERSION" "$XMRIG_URL" \
     && cd xmrig \
     && mkdir -p build \
     && sed -i 's/kDefaultDonateLevel = 1;/kDefaultDonateLevel = 0;/; s/kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/;' src/donate.h \
@@ -17,7 +17,7 @@ RUN git clone --single-branch --depth 1 --branch=$XMRIG_VERSION $XMRIG_URL \
     && ./build_deps.sh \
     && cd ../build \
     && if [[ "$(uname -m)" == *"aarch64"* ]]; then XMRIG_BUILD_ARGS="$XMRIG_BUILD_ARGS -DWITH_HWLOC=OFF -DCMAKE_SYSTEM_PROCESSOR=arm"; fi \
-    && cmake .. $XMRIG_BUILD_ARGS \
+    && cmake .. "$XMRIG_BUILD_ARGS" \
     && make -j$(nproc)
 
 # Stage 2: Copy XMRig binary into a smaller image
