@@ -32,5 +32,5 @@ jobs:
       with:
         dockerfile: Dockerfile
         recursive: false
-        config: ${{ github.workspace }}/.github/config/.hadolint.yml
+        config: ${{ github.workspace }}/.github/config/.hadolint.yaml
         verbose: true
