@@ -1,31 +1,21 @@
+---
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v4.5.0
   hooks:
   - id: check-json
   - id: check-case-conflict
   - id: check-merge-conflict
   - id: check-docstring-first
   - id: check-executables-have-shebangs
-  - id: fix-byte-order-marker
-  - id: double-quote-string-fixer
   - id: debug-statements
+  - id: fix-byte-order-marker
+  - id: fix-encoding-pragma
   - id: mixed-line-ending
   - id: trailing-whitespace
     args: [--markdown-linebreak-ext=md]
-- repo: https://github.com/zricethezav/gitleaks
-  rev: v8.18.0
-  hooks:
-  - id: gitleaks
-    args: ["--verbose"]
-- repo: https://github.com/commitizen-tools/commitizen
-  rev: 3.9.0
-  hooks:
-  - id: commitizen
-  - id: commitizen-branch
-    stages: [push]
 - repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.5.4
+  rev: v1.5.5
   hooks:
   - id: remove-crlf
   - id: remove-tabs
@@ -33,3 +23,22 @@ repos:
   rev: 0.2.0
   hooks:
   - id: fix-smartquotes
+- repo: https://github.com/asottile/add-trailing-comma
+  rev: v3.1.0
+  hooks:
+  - id: add-trailing-comma
+- repo: https://github.com/asottile/yesqa
+  rev: v1.5.0
+  hooks:
+  - id: yesqa
+- repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.21.3
+  hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages: [push]
+- repo: https://github.com/gitleaks/gitleaks
+  rev: v8.18.2
+  hooks:
+  - id: gitleaks-system
+    args: [--verbose]
