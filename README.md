@@ -33,9 +33,9 @@
 
 ## ➤ Important Note
 
-**This repository is intended for educational and ethical purposes only. The creators are not responsible for incorrect use by any individual. Use it knowing that you will be doing so at your own risk.**
+**🚨 This repository is intended for educational and ethical purposes. Please note that the creators cannot be held responsible for any misuse by individuals. However, we encourage you to use this resource at your own risk.**
 
-**If you plan to mine in a cloud, check your provider's terms and conditions before you start. The same applies if you are using private equipment or an on-site data center.**
+**Before mining in the cloud or using private equipment or an on-site data center, we recommend that you carefully review your provider's terms and conditions.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
