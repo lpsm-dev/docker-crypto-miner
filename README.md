@@ -31,15 +31,15 @@
 
 ---
 
-## ➤ Important Note
+## ➤ Important Note <a name="#-important-node"></a>
 
 **🚨 This repository is intended for educational and ethical purposes. Please note that the creators cannot be held responsible for any misuse by individuals. However, we encourage you to use this resource at your own risk.**
 
-**Before mining in the cloud or using private equipment or an on-site data center, we recommend that you carefully review your provider's terms and conditions.**
+**🚨 Before mining in the cloud or using private equipment or an on-site data center, we recommend that you carefully review your provider's terms and conditions.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Description
+## ➤ Description <a name="#-description"></a>
 
 This repository contains a containerized setup of the xmrig tool, which allows you to go from zero to mining in about 5 minutes on any architecture running containers.
 
