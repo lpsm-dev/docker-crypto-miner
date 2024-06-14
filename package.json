@@ -1,0 +1,34 @@
+{
+  "_comment": "this project is not a node.js one, package.json is just used to define some metadata",
+  "scripts": {
+    "cm": "git cz",
+    "precommit": "pre-commit run -a",
+    "preinstall": "npx force-resolutions",
+    "secrets": "gitleaks detect --config .github/config/.gitleaks.toml --verbose",
+    "docker-lint": "docker run --rm -i ghcr.io/hadolint/hadolint < Dockerfile",
+    "docker-inspect": "docker image build -t teste:1.0.0 . && dive teste:1.0.0 --config .github/config/.dive-ci.yaml --ci",
+    "docker-scan": "docker image build -t teste:1.0.0 . && trivy image teste:1.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.6.7",
+    "@commitlint/config-conventional": "17.6.7",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.1.0",
+    "@semantic-release/release-notes-generator": "10.0.3",
+    "commitizen": "4.3.0",
+    "semantic-release": "21.0.7"
+  }
+}
