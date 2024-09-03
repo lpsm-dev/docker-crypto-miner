@@ -40,7 +40,7 @@ jobs:
 
     - name: Release
       run: npx semantic-release
+      if: github.event.inputs.git-ref == 'main'
       env:
         CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      if: github.event.inputs.git-ref == 'main'
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
