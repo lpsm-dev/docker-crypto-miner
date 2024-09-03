@@ -1,5 +1,53 @@
 # Semantic Versioning Changelog
 
+## [1.5.0](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.4.0...1.5.0) (2024-09-03)
+
+
+### :memo: Docs
+
+* add gifs ([6450784](https://github.com/lpsm-dev/docker-crypto-miner/commit/6450784b83c6156267dede68f2744be2ea8ee86e))
+* change yoda gif url ([bfe0aa7](https://github.com/lpsm-dev/docker-crypto-miner/commit/bfe0aa7d90acf554b881d0f01038cba6380c218c))
+* gif location ([809be33](https://github.com/lpsm-dev/docker-crypto-miner/commit/809be33a2f3972d463a0af364294c3e7c21b2707))
+* important section ([317f004](https://github.com/lpsm-dev/docker-crypto-miner/commit/317f0049aa6d8de76ded4d078e2bf3b9af3c2249))
+* link refs ([bfe5177](https://github.com/lpsm-dev/docker-crypto-miner/commit/bfe51775fb51e9d5df61bf1ff477828897d98a40))
+* small title change ([8ca1971](https://github.com/lpsm-dev/docker-crypto-miner/commit/8ca19711d52efad10793e5eec3c3f4b5f1c988a5))
+* update messages ([37d873c](https://github.com/lpsm-dev/docker-crypto-miner/commit/37d873ce3af04fe8d9ddb876739d7bb7a00979dc))
+
+
+### :sparkles: News
+
+* add commands ([85c7a0e](https://github.com/lpsm-dev/docker-crypto-miner/commit/85c7a0e75cfc34b16ea2d9b424244f1751db62d7))
+* add config .yamllint.yml ([bef20c7](https://github.com/lpsm-dev/docker-crypto-miner/commit/bef20c773988bd9aa1958ce80c04e004c93e1eba))
+* add devbox ([6746619](https://github.com/lpsm-dev/docker-crypto-miner/commit/674661907d34c91f676f8d4f0b978a18e74a670b))
+* add direnv in tool-versions ([dca5c4b](https://github.com/lpsm-dev/docker-crypto-miner/commit/dca5c4bbc04626ca2a947c2a55e1a6b9949e9eaa))
+* add file ([7ff41c7](https://github.com/lpsm-dev/docker-crypto-miner/commit/7ff41c7bfc174dc177cfd72e87ed5be88110fe91))
+* tf organization ([992fbb5](https://github.com/lpsm-dev/docker-crypto-miner/commit/992fbb567cf5cfc9e9db4f75d2b1ff185735cd0c))
+
+
+### :bug: Fix
+
+* docker build alpine version 3.15.10 ([7b574c2](https://github.com/lpsm-dev/docker-crypto-miner/commit/7b574c29c591677d0e4493bb652b62af5d2c5a37))
+* Dockerfile to reduce vulnerabilities ([89a313d](https://github.com/lpsm-dev/docker-crypto-miner/commit/89a313dc162c37ed31b57abf48cc429e4ac201e7))
+* extension file ([f050af6](https://github.com/lpsm-dev/docker-crypto-miner/commit/f050af673ea8371ca4e744b6942c0aa86603ad78))
+* no-cache option apk add ([1dd792a](https://github.com/lpsm-dev/docker-crypto-miner/commit/1dd792a484d531b6a4f89565ff35599ca756ce72))
+* release.yml ([3f52a37](https://github.com/lpsm-dev/docker-crypto-miner/commit/3f52a370969654e2682d3eb4397471af33af8b19))
+* setup taskfile ([d919e03](https://github.com/lpsm-dev/docker-crypto-miner/commit/d919e03b853d98693e08d782838bc27e9c502715))
+* setup tf code ([2f87715](https://github.com/lpsm-dev/docker-crypto-miner/commit/2f877159fc44be453cebb1cb6985fdc5c22d43d0))
+* setup tool versions ([32380ab](https://github.com/lpsm-dev/docker-crypto-miner/commit/32380ab86f633acc5c47bb7c76ac049b469c6179))
+* setup yaml files ([6c5171c](https://github.com/lpsm-dev/docker-crypto-miner/commit/6c5171c63d755288d4ac662f6f5d5d2ba2e5441e))
+* update tool-versions ([82ef0ca](https://github.com/lpsm-dev/docker-crypto-miner/commit/82ef0ca4820705eaef65e7f46097c8a59bcf2ccf))
+* value secrets ([b481a66](https://github.com/lpsm-dev/docker-crypto-miner/commit/b481a6693faa0617c6b149e960bc431f0e6412c0))
+* xmrig to 6.20 and others changes ([0f1d70b](https://github.com/lpsm-dev/docker-crypto-miner/commit/0f1d70bbf99f27016cce70f46d4025e90df65d81))
+
+
+### :repeat: CI
+
+* call hadolint file ([1c2c53d](https://github.com/lpsm-dev/docker-crypto-miner/commit/1c2c53d426f02478aa8c16338d73400677dde14c))
+* change templates and rename files ([0aa6287](https://github.com/lpsm-dev/docker-crypto-miner/commit/0aa6287c528e21a1b82d799c3f79244831425103))
+* change va ([5715c77](https://github.com/lpsm-dev/docker-crypto-miner/commit/5715c773cad09e4c5c6747b5d3ae341a74a9f41b))
+* identation file ([8c16d72](https://github.com/lpsm-dev/docker-crypto-miner/commit/8c16d7202a285803ffaeb40bdd72eb08ada251c3))
+* rename file circle ci ([45535cb](https://github.com/lpsm-dev/docker-crypto-miner/commit/45535cb8b89170b076e32b0258c5a2399c1121dc))
+
 ## [1.4.0](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.3.0...1.4.0) (2023-05-03)
 
 
