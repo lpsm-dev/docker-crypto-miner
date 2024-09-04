@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.5.1](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.5.0...1.5.1) (2024-09-04)
+
+
+### :bug: Fix
+
+* change xmrig version ([1cfcd31](https://github.com/lpsm-dev/docker-crypto-miner/commit/1cfcd31851de6f0e290db7cf227b6593ac5a6061))
+
 ## [1.5.0](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.4.0...1.5.0) (2024-09-03)
 
 
