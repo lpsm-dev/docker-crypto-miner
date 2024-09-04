@@ -16,8 +16,7 @@ RUN git clone --single-branch --depth 1 --branch="$XMRIG_VERSION" "$XMRIG_URL" \
     && cd scripts \
     && ./build_deps.sh \
     && cd ../build \
-    && if [[ "$(uname -m)" == *"aarch64"* ]]; then XMRIG_BUILD_ARGS="$XMRIG_BUILD_ARGS -DWITH_HWLOC=OFF -DCMAKE_SYSTEM_PROCESSOR=arm"; fi \
-    && cmake .. "$XMRIG_BUILD_ARGS" \
+    && cmake .. $XMRIG_BUILD_ARGS \
     && make -j$(nproc)
 
 # Stage 2: Copy XMRig binary into a smaller image
