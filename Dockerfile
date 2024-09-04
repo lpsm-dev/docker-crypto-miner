@@ -1,7 +1,7 @@
 # Stage 1: Build the XMRig binary
 FROM public.ecr.aws/docker/library/alpine:3.15.10 as builder
 
-ARG XMRIG_VERSION=v6.20.0
+ARG XMRIG_VERSION=v6.22.0
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
 ARG XMRIG_BUILD_ARGS="-DXMRIG_DEPS=scripts/deps -DBUILD_STATIC=ON -DWITH_HWLOC=OFF"
 
