@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.5.2](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.5.1...1.5.2) (2024-09-04)
+
+
+### :bug: Fix
+
+* rm code ([fd6c7a3](https://github.com/lpsm-dev/docker-crypto-miner/commit/fd6c7a3663286876e45173c9524c587cfb32ebb7))
+
 ## [1.5.1](https://github.com/lpsm-dev/docker-crypto-miner/compare/1.5.0...1.5.1) (2024-09-04)
 
 
