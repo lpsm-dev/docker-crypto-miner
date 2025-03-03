@@ -1,7 +1,7 @@
 <!-- BEGIN_TF_DOCS -->
-<div align="center">
-
 <a name="readme-top"></a>
+
+<div align="center">
 
 <img alt="gif-header" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-header.gif" width="225"/>
 
@@ -10,8 +10,6 @@
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)]()
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)]()
 [![GitHub repo size](https://img.shields.io/github/repo-size/lpsm-dev/personal-resume)]()
-
----
 
 <img alt="gif-about" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-about.gif" width="225"/>
 
@@ -28,8 +26,6 @@
 </p>
 
 </div>
-
----
 
 ## ➤ Important Note <a name="#-important-node"></a>
 
