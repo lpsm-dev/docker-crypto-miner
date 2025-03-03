@@ -196,16 +196,6 @@ Pay attention to the images you use for these purposes and protect yourself agai
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Donations
-
-If my work has had a positive impact on your life and you want to buy me a coffee (or a hundred), you'll be very grateful!
-
-<a href="https://www.blockchain.com/pt/btc/address/bc1qhfnh66d2wnveg3s932dz4gtmdqljrj67hs7hta">
-  <img alt="BTC Address" src="https://img.shields.io/badge/BTC%20Address-black?style=for-the-badge&logo=bitcoin&logoColor=white">
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## ➤ Versioning <a name="#-versioning"></a>
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
