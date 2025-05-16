@@ -1,3 +1,4 @@
+<!-- BEGIN_DOCS -->
 # [❮ Back](https://github.com/lpsm-dev/docker-crypto-miner)
 
 ## ➤ Topics
@@ -41,3 +42,4 @@ kubectl get ns
 kubectl get pod -n xmrig
 k9s
 ```
+<!-- END_DOCS -->

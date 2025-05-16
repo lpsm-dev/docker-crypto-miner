@@ -18,17 +18,3 @@ insert_final_newline = true
 # No whitespace at the end of line
 trim_trailing_whitespace = true
 
-# ================================================
-# 4 SPACE INDENTATION
-# ================================================
-
-[{Makefile,**.mk}]
-indent_size = 4
-indent_style = tab
-
-# ================================================
-# 2 SPACE INDENTATION
-# ================================================
-
-[*.{md,Rmd,rst}]
-trim_trailing_whitespace = false

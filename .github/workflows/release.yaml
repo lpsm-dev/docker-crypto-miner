@@ -17,30 +17,30 @@ jobs:
     permissions:
       contents: write
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        persist-credentials: false
-      if: github.event.inputs.git-ref == 'main'
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+        if: github.event.inputs.git-ref == 'main'
 
-    - name: Setup node
-      uses: actions/setup-node@v3
-      with:
-        node-version: "lts/*"
-      if: github.event.inputs.git-ref == 'main'
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+        if: github.event.inputs.git-ref == 'main'
 
-    - name: Copy rules
-      run: |
-        cp .github/config/.releaserc.json .
+      - name: Copy rules
+        run: |
+          cp .github/config/.releaserc.json .
 
-    - name: Install dependencies
-      run: npm install
-      if: github.event.inputs.git-ref == 'main'
+      - name: Install dependencies
+        run: npm install
+        if: github.event.inputs.git-ref == 'main'
 
-    - name: Release
-      run: npx semantic-release
-      if: github.event.inputs.git-ref == 'main'
-      env:
-        CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Release
+        run: npx semantic-release
+        if: github.event.inputs.git-ref == 'main'
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}

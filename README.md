@@ -1,11 +1,11 @@
-<!-- BEGIN_TF_DOCS -->
+<!-- BEGIN_DOCS -->
 <a name="readme-top"></a>
 
 <div align="center">
 
 <img alt="gif-header" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-header.gif" width="225"/>
 
-<h2>Docker Crypto Miner</h2>
+Docker Crypto Miner
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)]()
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)]()
@@ -13,21 +13,11 @@
 
 <img alt="gif-about" src="https://github.com/lpsm-dev/lpsm-dev/blob/main/.github/assets/gif-about.gif" width="225"/>
 
-<p>A containerized solution for mining crypto using <a href=https://github.com/xmrig/xmrig>XMRig</a> miner</p>
-
-<p>
-  <a href="#-description-">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-getting-started-">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-concepts-">Concepts</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-links-">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-donations-">Donations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-versioning-">Versioning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-troubleshooting-">Troubleshooting</a>
-</p>
+A containerized solution for mining crypto using [XMRig](https://github.com/xmrig/xmrig) miner
 
 </div>
 
-## ➤ Important Note <a name="#-important-node"></a>
+# Important Note
 
 **🚨 This repository is intended for educational and ethical purposes. Please note that the creators cannot be held responsible for any misuse by individuals. However, we encourage you to use this resource at your own risk.**
 
@@ -35,7 +25,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Description <a name="#-description"></a>
+# Description
 
 This repository contains a containerized setup of the xmrig tool, which allows you to go from zero to mining in about 5 minutes on any architecture running containers.
 
@@ -43,9 +33,9 @@ CPU mining can be profitable using algorithms such as: `RandomX`, `Cryptonight` 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Getting Started <a name="#-getting-started"></a>
+# Getting Started
 
-### Setup
+## Setup
 
 To configure your system for the development of this project, follow the steps below:
 
@@ -59,7 +49,7 @@ asdf install
 
 - Run task from the root of the repository to see available commands. We use task in place of make for this project. See [Taskfile.yml](Taskfile.yml) for more information.
 
-### Variables
+## Variables
 
 The preferred way to configure XMRig is using a configuration file in JSON format, because it is more flexible and easier to use. The CLI doesn't cover all the features available and can be a limiting factor, depending on the scenario.
 
@@ -72,7 +62,7 @@ The preferred way to configure XMRig is using a configuration file in JSON forma
 | WORKER_NAME           | Worker name                   |
 | XMRIG_CONFIG_FILE     | XMRig config file reference   |
 
-### Running
+## Running
 
 **Docker**
 
@@ -115,7 +105,6 @@ docker logs --tail 1000 crypto-miner
 </p>
 </details>
 
-
 **Kubernetes**
 
 <details>
@@ -134,11 +123,11 @@ For more information [here](./infra/README.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Concepts
+# Concepts
 
 This section aims to describe at a high level which tools we use and how we use them, without reproducing documentation that is better written (and more up-to-date) in the repositories and websites of the tools themselves. It is recommended that you familiarize yourself with these tools as soon as possible.
 
-### XMRig
+## XMRig
 
 Basically, XMRig is a free, open-source mining program. It can be installed on Windows, Linux and macOS, and allows you to mine using the RandomX algorithm. Here's a brief example of the run command:
 
@@ -151,27 +140,27 @@ xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u COIN:YOUR_ADDRESS.WORKER_NAME#RE
 - **WORKER_NAME**: it's any name that you would like to define for your worker.
 - **REFERRAL_CODE**: it's the parameter used to reduce the mining rate.
 
-### Unmineable
+## Unmineable
 
 Unmineable is a mining pool that allows anyone to become a miner using a personal computer.
 
-### ASIC
+## ASIC
 
 The acronym ASIC describes a series of computer devices designed from start to finish to provide maximum performance in cryptocurrency mining tasks.
 
-### RandomX
+## RandomX
 
 RandomX is a proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RandomX uses random code execution (hence the name) along with various hard memory techniques to minimize the efficiency advantage of specialized hardware.
 
-### Mining Rig
+## Mining Rig
 
 A mining rig is a mining platform. The rig can be a dedicated miner, where it has been bought, built and operated specifically for mining, or it can be a computer that fulfills other needs, such as a gaming system, and is used to mine only part-time.
 
-### CPU Limit
+## CPU Limit
 
 Cpulimit is a tool that allows us to limit CPU usage by process. It gives us a few ways to identify the desired process, either by process name, PID or executable path. It's useful for controlling batch tasks when you don't want them to consume too many CPU cycles. The aim is to prevent a process from running for more than a certain amount of time. It is also able to adapt to the overall system load dynamically and quickly.
 
-### Security
+## Security
 
 <div align="center">
 
@@ -183,7 +172,7 @@ Pay attention to the images you use for these purposes and protect yourself agai
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Links
+# Links
 
 - [XMRig configuration wizard](https://xmrig.com/wizard)
 - [Unmineable](https://unmineable.com)
@@ -196,19 +185,19 @@ Pay attention to the images you use for these purposes and protect yourself agai
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Versioning <a name="#-versioning"></a>
+# Versioning
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Troubleshooting <a name="#-troubleshooting"></a>
+# Troubleshooting
 
 If you have any problems, [open an issue in this project](https://github.com/lpsm-dev/docker-crypto-miner/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ➤ Show your support <a name="-show-your-support"></a>
+# Show your support
 
 <div align="center">
 
@@ -221,4 +210,4 @@ Made with 💜 by [me](https://github.com/lpsm-dev) 👋 inspired on [readme-md-
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- END_TF_DOCS -->
+<!-- END_DOCS -->

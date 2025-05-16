@@ -5,25 +5,25 @@ tasks:
   init:
     desc: Initialize pre-commit hooks
     preconditions:
-    - sh: "which pre-commit"
-      msg: "kind {{.PATH_ERROR}}"
+      - sh: "which pre-commit"
+        msg: "kind {{.PATH_ERROR}}"
     cmds:
-    - pre-commit clean
-    - pre-commit gc
-    - task: update
-    - pre-commit install --install-hooks -t commit-msg
+      - pre-commit clean
+      - pre-commit gc
+      - task: update
+      - pre-commit install --install-hooks -t commit-msg
 
   update:
     desc: Update pre-commit hooks
     cmds:
-    - pre-commit autoupdate
+      - pre-commit autoupdate
 
   delete:
     desc: Delete pre-commit hooks
     cmds:
-    - pre-commit uninstall --hook-type commit-msg
+      - pre-commit uninstall --hook-type commit-msg
 
   run:
     desc: Run pre-commit hooks
     cmds:
-    - pre-commit run --all-files
+      - pre-commit run --all-files
