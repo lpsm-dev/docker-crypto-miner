@@ -10,7 +10,7 @@
     "direnv@latest",
     "gitleaks@latest",
     "hadolint@latest",
-    "kubectl@latest",
+    "kubectl@1.33.0",
     "kubernetes-helm@latest",
     "kustomize@latest",
     "pre-commit@latest",
