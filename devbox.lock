@@ -245,55 +245,19 @@
         }
       }
     },
-    "hadolint@latest": {
-      "last_modified": "2025-05-12T14:38:58Z",
-      "resolved": "github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1#hadolint",
+    "hadolint@1.23.0": {
+      "last_modified": "2021-04-02T00:58:33Z",
+      "resolved": "github:NixOS/nixpkgs/54c1e44240d8a527a8f4892608c4bce5440c3ecb#hadolint",
       "source": "devbox-search",
-      "version": "2.12.0",
+      "version": "1.23.0",
       "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/xwb8v2p3dvflxjb2whk606ipzxpwhanj-hadolint-2.12.0",
-              "default": true
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/5bkfvlalskk5v1f26nm6d9zr3avdx7pi-hadolint-2.12.0-doc"
-            }
-          ],
-          "store_path": "/nix/store/xwb8v2p3dvflxjb2whk606ipzxpwhanj-hadolint-2.12.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/k9bnwlsbj34r94zbhaz0fi88sp9wb2x8-hadolint-2.12.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/k9bnwlsbj34r94zbhaz0fi88sp9wb2x8-hadolint-2.12.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/hgxx1ip7yacvfrspfvdpvmsizn3hjry9-hadolint-2.12.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/hgxx1ip7yacvfrspfvdpvmsizn3hjry9-hadolint-2.12.0"
-        },
         "x86_64-linux": {
           "outputs": [
             {
-              "name": "out",
-              "path": "/nix/store/j6blpwvwp535qy47432lgfgaqyyz6fr3-hadolint-2.12.0",
+              "path": "/tmp/containerbase/cache/nix/store/fszznfkswqcbjfgrrgwha915zjqmgmzq-hadolint-1.23.0",
               "default": true
             }
-          ],
-          "store_path": "/nix/store/j6blpwvwp535qy47432lgfgaqyyz6fr3-hadolint-2.12.0"
+          ]
         }
       }
     },
