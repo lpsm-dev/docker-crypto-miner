@@ -9,7 +9,7 @@
     "yamllint@latest",
     "direnv@latest",
     "gitleaks@latest",
-    "hadolint@latest",
+    "hadolint@1.23.0",
     "kubectl@latest",
     "kubernetes-helm@latest",
     "kustomize@latest",
