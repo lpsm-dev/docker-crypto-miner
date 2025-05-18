@@ -5,7 +5,7 @@
     "actionlint@latest",
     "gitleaks@latest",
     "go-task@latest",
-    "pre-commit@latest",
+    "pre-commit@2.20.0",
     "yamllint@latest",
     "direnv@latest",
     "gitleaks@latest",
@@ -13,7 +13,7 @@
     "kubectl@latest",
     "kubernetes-helm@latest",
     "kustomize@latest",
-    "pre-commit@latest",
+    "pre-commit@2.20.0",
     "terraform-docs@latest",
     "tflint@latest"
   ]
