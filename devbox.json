@@ -6,7 +6,7 @@
     "gitleaks@7.6.1",
     "go-task@latest",
     "pre-commit@2.20.0",
-    "yamllint@latest",
+    "yamllint@1.37.1",
     "direnv@2.36.0",
     "gitleaks@7.6.1",
     "hadolint@latest",
