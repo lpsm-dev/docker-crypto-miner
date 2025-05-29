@@ -149,51 +149,19 @@
       "last_modified": "2025-05-15T12:36:28Z",
       "resolved": "github:NixOS/nixpkgs/b1bebd0fe266bbd1820019612ead889e96a8fa2d?lastModified=1747312588&narHash=sha256-MmJvj6mlWzeRwKGLcwmZpKaOPZ5nJb%2F6al5CXqJsgjo%3D"
     },
-    "gitleaks@latest": {
-      "last_modified": "2025-05-12T14:38:58Z",
-      "resolved": "github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1#gitleaks",
+    "gitleaks@7.6.1": {
+      "last_modified": "2021-12-03T17:41:48Z",
+      "resolved": "github:NixOS/nixpkgs/2df15ba83d0510a56f2583fd3481723835acb5a1#gitleaks",
       "source": "devbox-search",
-      "version": "8.25.1",
+      "version": "7.6.1",
       "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/4vxf5vry1wkg9py19px7j5b336j2xj79-gitleaks-8.25.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/4vxf5vry1wkg9py19px7j5b336j2xj79-gitleaks-8.25.1"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/7i0wns4iiacbp2z42liwrkds7hpx8471-gitleaks-8.25.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/7i0wns4iiacbp2z42liwrkds7hpx8471-gitleaks-8.25.1"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/bn9ch8k32j9gg1zc303nksz9kkz61i39-gitleaks-8.25.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/bn9ch8k32j9gg1zc303nksz9kkz61i39-gitleaks-8.25.1"
-        },
         "x86_64-linux": {
           "outputs": [
             {
-              "name": "out",
-              "path": "/nix/store/icbdikb1ss07rmadhwxcn5nda19nvc3w-gitleaks-8.25.1",
+              "path": "/tmp/containerbase/cache/nix/store/m4y3nvfv4zh4f0zbgznv886alaz2azhq-gitleaks-7.6.1",
               "default": true
             }
-          ],
-          "store_path": "/nix/store/icbdikb1ss07rmadhwxcn5nda19nvc3w-gitleaks-8.25.1"
+          ]
         }
       }
     },
@@ -557,51 +525,51 @@
         }
       }
     },
-    "tflint@0.57.0": {
-      "last_modified": "2025-05-06T08:06:31Z",
-      "resolved": "github:NixOS/nixpkgs/1cb1c02a6b1b7cf67e3d7731cbbf327a53da9679#tflint",
+    "tflint@0.58.0": {
+      "last_modified": "2025-05-25T15:24:27Z",
+      "resolved": "github:NixOS/nixpkgs/bdac72d387dca7f836f6ef1fe547755fb0e9df61#tflint",
       "source": "devbox-search",
-      "version": "0.57.0",
+      "version": "0.58.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ia54zf3bjlcjmyc5kcww7cp18wsqrj54-tflint-0.57.0",
+              "path": "/nix/store/4qk8245ngy68wnb2ppmpf3mxaarqx455-tflint-0.58.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ia54zf3bjlcjmyc5kcww7cp18wsqrj54-tflint-0.57.0"
+          "store_path": "/nix/store/4qk8245ngy68wnb2ppmpf3mxaarqx455-tflint-0.58.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/6x4z0b3iv7y132a71mk4y8r6v7f0mvwk-tflint-0.57.0",
+              "path": "/nix/store/iprfjpbgjax3vgvdwa5qp47gang68jg7-tflint-0.58.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/6x4z0b3iv7y132a71mk4y8r6v7f0mvwk-tflint-0.57.0"
+          "store_path": "/nix/store/iprfjpbgjax3vgvdwa5qp47gang68jg7-tflint-0.58.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/z0m8q3sllwaqlg115j1cpqabsfjwvl0k-tflint-0.57.0",
+              "path": "/nix/store/m4bw0c8gy1s12vcz5dnckwk1ixbfqd2v-tflint-0.58.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/z0m8q3sllwaqlg115j1cpqabsfjwvl0k-tflint-0.57.0"
+          "store_path": "/nix/store/m4bw0c8gy1s12vcz5dnckwk1ixbfqd2v-tflint-0.58.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/jb0wzi3i7cmdn0l08k5a1c30i3acx9bs-tflint-0.57.0",
+              "path": "/nix/store/xjxn3miyzqfnf1451ysmdzfr15x7n50b-tflint-0.58.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/jb0wzi3i7cmdn0l08k5a1c30i3acx9bs-tflint-0.57.0"
+          "store_path": "/nix/store/xjxn3miyzqfnf1451ysmdzfr15x7n50b-tflint-0.58.0"
         }
       }
     },
