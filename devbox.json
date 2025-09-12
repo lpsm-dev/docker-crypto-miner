@@ -11,7 +11,7 @@
     "gitleaks@8.28.0",
     "hadolint@2.12.0",
     "kubectl@1.33.3",
-    "kubernetes-helm@3.17.3",
+    "kubernetes-helm@3.18.4",
     "kustomize@5.7.1",
     "pre-commit@4.2.0",
     "terraform-docs@0.20.0",
