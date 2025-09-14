@@ -4,7 +4,7 @@
 
 module "kms_eks" {
   source  = "terraform-aws-modules/kms/aws"
-  version = "~> 2.2"
+  version = "~> 4.0"
 
   description             = "Setup KMS ${local.aws_eks.cluster_name} cluster encryption key"
   deletion_window_in_days = 7
