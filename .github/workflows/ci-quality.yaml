@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Commit Lint
-        uses: wagoid/commitlint-github-action@v5
+        uses: wagoid/commitlint-github-action@v6
         continue-on-error: true
 
       - name: Secret Detection
