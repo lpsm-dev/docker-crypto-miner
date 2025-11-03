@@ -15,6 +15,6 @@
     "kustomize@5.7.1",
     "pre-commit@4.3.0",
     "terraform-docs@0.20.0",
-    "tflint@0.58.1"
+    "tflint@0.59.1"
   ]
 }
