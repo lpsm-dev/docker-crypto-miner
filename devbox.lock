@@ -49,51 +49,51 @@
         }
       }
     },
-    "actionlint@1.7.7": {
-      "last_modified": "2025-05-06T08:06:31Z",
-      "resolved": "github:NixOS/nixpkgs/1cb1c02a6b1b7cf67e3d7731cbbf327a53da9679#actionlint",
+    "actionlint@1.7.8": {
+      "last_modified": "2025-10-26T01:09:48Z",
+      "resolved": "github:NixOS/nixpkgs/de69d2ba6c70e747320df9c096523b623d3a4c35#actionlint",
       "source": "devbox-search",
-      "version": "1.7.7",
+      "version": "1.7.8",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/m3ns0ds4hsksps1mp7j7msz2zx1wb5qa-actionlint-1.7.7",
+              "path": "/nix/store/jlj0v88mh4mmg5gi65cnr366yvkrgvb2-actionlint-1.7.8",
               "default": true
             }
           ],
-          "store_path": "/nix/store/m3ns0ds4hsksps1mp7j7msz2zx1wb5qa-actionlint-1.7.7"
+          "store_path": "/nix/store/jlj0v88mh4mmg5gi65cnr366yvkrgvb2-actionlint-1.7.8"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/kpfzxhxcy8f9fybcwqbn3a9jvngcwlsj-actionlint-1.7.7",
+              "path": "/nix/store/7if1smaz8v6866601ia1cqdh4hv2p864-actionlint-1.7.8",
               "default": true
             }
           ],
-          "store_path": "/nix/store/kpfzxhxcy8f9fybcwqbn3a9jvngcwlsj-actionlint-1.7.7"
+          "store_path": "/nix/store/7if1smaz8v6866601ia1cqdh4hv2p864-actionlint-1.7.8"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/3vy2gdzkxajl3i9gzc39x6yaandbfphj-actionlint-1.7.7",
+              "path": "/nix/store/n4rvwclfkmi9xljm90zj9idi8w6jh252-actionlint-1.7.8",
               "default": true
             }
           ],
-          "store_path": "/nix/store/3vy2gdzkxajl3i9gzc39x6yaandbfphj-actionlint-1.7.7"
+          "store_path": "/nix/store/n4rvwclfkmi9xljm90zj9idi8w6jh252-actionlint-1.7.8"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/m2gqz1l4na625rwnvz6b0i1jv7qkdbsr-actionlint-1.7.7",
+              "path": "/nix/store/jajp66pslsj4jsy5s5rx3k5ly0zgfh43-actionlint-1.7.8",
               "default": true
             }
           ],
-          "store_path": "/nix/store/m2gqz1l4na625rwnvz6b0i1jv7qkdbsr-actionlint-1.7.7"
+          "store_path": "/nix/store/jajp66pslsj4jsy5s5rx3k5ly0zgfh43-actionlint-1.7.8"
         }
       }
     },
@@ -477,67 +477,67 @@
         }
       }
     },
-    "pre-commit@4.2.0": {
-      "last_modified": "2025-08-11T07:05:29Z",
-      "resolved": "github:NixOS/nixpkgs/9585e9192aadc13ec3e49f33f8333bd3cda524df#pre-commit",
+    "pre-commit@4.3.0": {
+      "last_modified": "2025-10-22T20:59:19Z",
+      "resolved": "github:NixOS/nixpkgs/01b6809f7f9d1183a2b3e081f0a1e6f8f415cb09#pre-commit",
       "source": "devbox-search",
-      "version": "4.2.0",
+      "version": "4.3.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/awyg4wwb7w117sr32zbw453yylzy1sv5-pre-commit-4.2.0",
+              "path": "/nix/store/ybm1c3dsh5p5d2hlz9vk7a2m2liilmwa-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/6j8b2k8vcm8ff3fwrwpkxr2q796yqwzl-pre-commit-4.2.0-dist"
+              "path": "/nix/store/2da0ih90r5dqsxgbwyf7y4cy49bsycds-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/awyg4wwb7w117sr32zbw453yylzy1sv5-pre-commit-4.2.0"
+          "store_path": "/nix/store/ybm1c3dsh5p5d2hlz9vk7a2m2liilmwa-pre-commit-4.3.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/z7aiyfndjqrzk0igjdzjf2sab137083p-pre-commit-4.2.0",
+              "path": "/nix/store/gva2a0hsz8jxgj2abp6aa1zhmamcdd2k-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/mr9jivn3fc4g4ncb25ij73481ilmba4k-pre-commit-4.2.0-dist"
+              "path": "/nix/store/141k4slj0hdc3mgkdsm7kxc2h70jk3r1-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/z7aiyfndjqrzk0igjdzjf2sab137083p-pre-commit-4.2.0"
+          "store_path": "/nix/store/gva2a0hsz8jxgj2abp6aa1zhmamcdd2k-pre-commit-4.3.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mx4vjrjzfxsarwkx12ddvn18kvphsds4-pre-commit-4.2.0",
+              "path": "/nix/store/cxjhh74an2y4n7cvzyf77asa99r7333l-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/hgf3j4hj0ng2xwq71n5a8j02y6zha5gq-pre-commit-4.2.0-dist"
+              "path": "/nix/store/4y8s3ad4j7fqgsdb21g4b8q28rs37qnw-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/mx4vjrjzfxsarwkx12ddvn18kvphsds4-pre-commit-4.2.0"
+          "store_path": "/nix/store/cxjhh74an2y4n7cvzyf77asa99r7333l-pre-commit-4.3.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/h9f0ac5z0scz7fp4p8xznw2m04xx45in-pre-commit-4.2.0",
+              "path": "/nix/store/j1xrdcpd81zjz7ac5dd4q5c94mbkap9h-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/k9svwjpac38jf5c1zlxdhvhpk3ljf57r-pre-commit-4.2.0-dist"
+              "path": "/nix/store/azb7sm6hipp1cjk0cjl35a9v00xaq4rk-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/h9f0ac5z0scz7fp4p8xznw2m04xx45in-pre-commit-4.2.0"
+          "store_path": "/nix/store/j1xrdcpd81zjz7ac5dd4q5c94mbkap9h-pre-commit-4.3.0"
         }
       }
     },
