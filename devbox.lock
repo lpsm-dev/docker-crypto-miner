@@ -245,55 +245,55 @@
         }
       }
     },
-    "hadolint@2.13.1": {
-      "last_modified": "2025-10-07T08:41:47Z",
-      "resolved": "github:NixOS/nixpkgs/bce5fe2bb998488d8e7e7856315f90496723793c#hadolint",
+    "hadolint@2.14.0": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#hadolint",
       "source": "devbox-search",
-      "version": "2.13.1",
+      "version": "2.14.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/b54sh64m5f7ayqlb7i4l4ncz43w2vwyy-hadolint-2.13.1",
+              "path": "/nix/store/q7p7j7dzzqa175z0cl0jxhzs7zy7kw0m-hadolint-2.14.0",
               "default": true
             },
             {
               "name": "doc",
-              "path": "/nix/store/qgv3msp391zqc4b9zw4699lxq1ani64a-hadolint-2.13.1-doc"
+              "path": "/nix/store/2c6kmssbjjzs9vw81hzfgmnhz2zphbi3-hadolint-2.14.0-doc"
             }
           ],
-          "store_path": "/nix/store/b54sh64m5f7ayqlb7i4l4ncz43w2vwyy-hadolint-2.13.1"
+          "store_path": "/nix/store/q7p7j7dzzqa175z0cl0jxhzs7zy7kw0m-hadolint-2.14.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1blscjlhlzkzcgp5ar8f2wbm203gazdh-hadolint-2.13.1",
+              "path": "/nix/store/63acyx57xm3wcxiiq1071qgjqlb0namg-hadolint-2.14.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/1blscjlhlzkzcgp5ar8f2wbm203gazdh-hadolint-2.13.1"
+          "store_path": "/nix/store/63acyx57xm3wcxiiq1071qgjqlb0namg-hadolint-2.14.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/w48zabjl5ziwx63a6b2s5d7ywgiwian9-hadolint-2.13.1",
+              "path": "/nix/store/c5p1w3nl0ywsnv8kz6wymll4iyyky3x9-hadolint-2.14.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/w48zabjl5ziwx63a6b2s5d7ywgiwian9-hadolint-2.13.1"
+          "store_path": "/nix/store/c5p1w3nl0ywsnv8kz6wymll4iyyky3x9-hadolint-2.14.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/28yqsdq8nw25376729vy3i2na7cald9h-hadolint-2.13.1",
+              "path": "/nix/store/kavldg345m7cmwr70rhjbcdqv4g049ra-hadolint-2.14.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/28yqsdq8nw25376729vy3i2na7cald9h-hadolint-2.13.1"
+          "store_path": "/nix/store/kavldg345m7cmwr70rhjbcdqv4g049ra-hadolint-2.14.0"
         }
       }
     },
@@ -477,67 +477,67 @@
         }
       }
     },
-    "pre-commit@4.2.0": {
-      "last_modified": "2025-08-11T07:05:29Z",
-      "resolved": "github:NixOS/nixpkgs/9585e9192aadc13ec3e49f33f8333bd3cda524df#pre-commit",
+    "pre-commit@4.3.0": {
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#pre-commit",
       "source": "devbox-search",
-      "version": "4.2.0",
+      "version": "4.3.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/awyg4wwb7w117sr32zbw453yylzy1sv5-pre-commit-4.2.0",
+              "path": "/nix/store/9ddgd7sar04a2w5bslf8hvhbsi9gf3k5-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/6j8b2k8vcm8ff3fwrwpkxr2q796yqwzl-pre-commit-4.2.0-dist"
+              "path": "/nix/store/v9fdnv1la3zw595f4a380d0rv6hcw6rw-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/awyg4wwb7w117sr32zbw453yylzy1sv5-pre-commit-4.2.0"
+          "store_path": "/nix/store/9ddgd7sar04a2w5bslf8hvhbsi9gf3k5-pre-commit-4.3.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/z7aiyfndjqrzk0igjdzjf2sab137083p-pre-commit-4.2.0",
+              "path": "/nix/store/lfx4qx4h8ayprwnshrpy0yl7chqwrgqd-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/mr9jivn3fc4g4ncb25ij73481ilmba4k-pre-commit-4.2.0-dist"
+              "path": "/nix/store/hyz983wrcgk1iya6rcwvhma57lg7xybr-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/z7aiyfndjqrzk0igjdzjf2sab137083p-pre-commit-4.2.0"
+          "store_path": "/nix/store/lfx4qx4h8ayprwnshrpy0yl7chqwrgqd-pre-commit-4.3.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mx4vjrjzfxsarwkx12ddvn18kvphsds4-pre-commit-4.2.0",
+              "path": "/nix/store/0ak7916dw0jj0y1q1vpa949al9i36g3g-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/hgf3j4hj0ng2xwq71n5a8j02y6zha5gq-pre-commit-4.2.0-dist"
+              "path": "/nix/store/4ay1aqa5py1lvi9jdgnjvglzgg4773xx-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/mx4vjrjzfxsarwkx12ddvn18kvphsds4-pre-commit-4.2.0"
+          "store_path": "/nix/store/0ak7916dw0jj0y1q1vpa949al9i36g3g-pre-commit-4.3.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/h9f0ac5z0scz7fp4p8xznw2m04xx45in-pre-commit-4.2.0",
+              "path": "/nix/store/mpy05k3b0vhg1ivb56jrnpnp4q7m4phb-pre-commit-4.3.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/k9svwjpac38jf5c1zlxdhvhpk3ljf57r-pre-commit-4.2.0-dist"
+              "path": "/nix/store/l9lpfhrzlz2g22dzhwcjzc5xxrfx2pi2-pre-commit-4.3.0-dist"
             }
           ],
-          "store_path": "/nix/store/h9f0ac5z0scz7fp4p8xznw2m04xx45in-pre-commit-4.2.0"
+          "store_path": "/nix/store/mpy05k3b0vhg1ivb56jrnpnp4q7m4phb-pre-commit-4.3.0"
         }
       }
     },
