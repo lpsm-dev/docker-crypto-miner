@@ -1,5 +1,5 @@
 # Stage 1: Build the XMRig binary
-FROM public.ecr.aws/docker/library/alpine:3.22.2 AS builder
+FROM public.ecr.aws/docker/library/alpine:3.23.3 AS builder
 
 ARG XMRIG_VERSION=v6.22.0
 ARG XMRIG_URL="https://github.com/xmrig/xmrig.git"
@@ -20,7 +20,7 @@ RUN git clone --single-branch --depth 1 --branch="$XMRIG_VERSION" "$XMRIG_URL" \
     && make -j$(nproc)
 
 # Stage 2: Copy XMRig binary into a smaller image
-FROM public.ecr.aws/docker/library/alpine:3.22.2
+FROM public.ecr.aws/docker/library/alpine:3.23.3
 
 RUN apk add --no-cache bash screen cpulimit \
     && addgroup --gid 1000 xmrig \
