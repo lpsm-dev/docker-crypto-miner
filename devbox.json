@@ -9,7 +9,7 @@
     "yamllint@1.37.1",
     "direnv@2.37.1",
     "gitleaks@8.28.0",
-    "hadolint@2.13.1",
+    "hadolint@2.14.0",
     "kubectl@1.34.3",
     "kubernetes-helm@3.19.1",
     "kustomize@5.8.0",
