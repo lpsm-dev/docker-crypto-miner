@@ -12,7 +12,7 @@
     "hadolint@2.14.0",
     "kubectl@1.35.0",
     "kubernetes-helm@3.19.1",
-    "kustomize@5.8.0",
+    "kustomize@5.8.1",
     "pre-commit@4.3.0",
     "terraform-docs@0.21.0",
     "tflint@0.61.0"
