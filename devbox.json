@@ -5,7 +5,7 @@
     "actionlint@1.7.11",
     "gitleaks@8.30.0",
     "go-task@3.48.0",
-    "pre-commit@4.3.0",
+    "pre-commit@4.5.1",
     "yamllint@1.37.1",
     "direnv@2.37.1",
     "gitleaks@8.30.0",
@@ -13,7 +13,7 @@
     "kubectl@1.35.0",
     "kubernetes-helm@3.19.1",
     "kustomize@5.8.1",
-    "pre-commit@4.3.0",
+    "pre-commit@4.5.1",
     "terraform-docs@0.21.0",
     "tflint@0.61.0"
   ]
