@@ -149,51 +149,51 @@
       "last_modified": "2025-05-15T12:36:28Z",
       "resolved": "github:NixOS/nixpkgs/b1bebd0fe266bbd1820019612ead889e96a8fa2d?lastModified=1747312588&narHash=sha256-MmJvj6mlWzeRwKGLcwmZpKaOPZ5nJb%2F6al5CXqJsgjo%3D"
     },
-    "gitleaks@8.30.0": {
-      "last_modified": "2026-02-23T15:40:43Z",
-      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#gitleaks",
+    "gitleaks@8.30.1": {
+      "last_modified": "2026-04-23T13:07:47Z",
+      "resolved": "github:NixOS/nixpkgs/01fbdeef22b76df85ea168fbfe1bfd9e63681b30#gitleaks",
       "source": "devbox-search",
-      "version": "8.30.0",
+      "version": "8.30.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/r0xwfwva8p84gqlv5jp8icl26mk0zw76-gitleaks-8.30.0",
+              "path": "/nix/store/rr5mn1bipkm870ln17lq5f6an3gx82c7-gitleaks-8.30.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/r0xwfwva8p84gqlv5jp8icl26mk0zw76-gitleaks-8.30.0"
+          "store_path": "/nix/store/rr5mn1bipkm870ln17lq5f6an3gx82c7-gitleaks-8.30.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ndzc5kkydjbia0fnkrczdmccsm465ah0-gitleaks-8.30.0",
+              "path": "/nix/store/pf1ifdlwf0l7ciqkbszm4ahnmr3yxg6h-gitleaks-8.30.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ndzc5kkydjbia0fnkrczdmccsm465ah0-gitleaks-8.30.0"
+          "store_path": "/nix/store/pf1ifdlwf0l7ciqkbszm4ahnmr3yxg6h-gitleaks-8.30.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dd6ms6sznnvf8nr48xzdbjplymk8m6i8-gitleaks-8.30.0",
+              "path": "/nix/store/nmba04ammp9yi1jjg6z6g33c8qidp3h2-gitleaks-8.30.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dd6ms6sznnvf8nr48xzdbjplymk8m6i8-gitleaks-8.30.0"
+          "store_path": "/nix/store/nmba04ammp9yi1jjg6z6g33c8qidp3h2-gitleaks-8.30.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/k0kf4ighsp04zb49lfhz2qlvdsv8d5f0-gitleaks-8.30.0",
+              "path": "/nix/store/h7zzkg5vh5v03wv9c7gdac064lm0s68p-gitleaks-8.30.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/k0kf4ighsp04zb49lfhz2qlvdsv8d5f0-gitleaks-8.30.0"
+          "store_path": "/nix/store/h7zzkg5vh5v03wv9c7gdac064lm0s68p-gitleaks-8.30.1"
         }
       }
     },
@@ -541,51 +541,51 @@
         }
       }
     },
-    "terraform-docs@0.21.0": {
-      "last_modified": "2026-02-06T12:24:04Z",
-      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#terraform-docs",
+    "terraform-docs@0.22.0": {
+      "last_modified": "2026-04-23T13:07:47Z",
+      "resolved": "github:NixOS/nixpkgs/01fbdeef22b76df85ea168fbfe1bfd9e63681b30#terraform-docs",
       "source": "devbox-search",
-      "version": "0.21.0",
+      "version": "0.22.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/5gnmnh4qxscb3vi61gvl15c24ll9sj2a-terraform-docs-0.21.0",
+              "path": "/nix/store/ja0ll7vq4s4if5kx049p3v1v24cpagfy-terraform-docs-0.22.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/5gnmnh4qxscb3vi61gvl15c24ll9sj2a-terraform-docs-0.21.0"
+          "store_path": "/nix/store/ja0ll7vq4s4if5kx049p3v1v24cpagfy-terraform-docs-0.22.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/v213d54kvqiyk93bi4h9k5lijxnblnmg-terraform-docs-0.21.0",
+              "path": "/nix/store/ryi26wfwhwx4l6ksiac6d92b8lmaz318-terraform-docs-0.22.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/v213d54kvqiyk93bi4h9k5lijxnblnmg-terraform-docs-0.21.0"
+          "store_path": "/nix/store/ryi26wfwhwx4l6ksiac6d92b8lmaz318-terraform-docs-0.22.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/iqr4bxl80148dp1nygcnz6zjz8vnrbki-terraform-docs-0.21.0",
+              "path": "/nix/store/yv57lm9h0xyfrv9pz1qqyaa9r5rdmdfy-terraform-docs-0.22.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/iqr4bxl80148dp1nygcnz6zjz8vnrbki-terraform-docs-0.21.0"
+          "store_path": "/nix/store/yv57lm9h0xyfrv9pz1qqyaa9r5rdmdfy-terraform-docs-0.22.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/pnc2s64627b82pk8w4m2jq14yw76yqb2-terraform-docs-0.21.0",
+              "path": "/nix/store/h2s79zbafw6qa3h1mk2minsx61hqddhz-terraform-docs-0.22.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/pnc2s64627b82pk8w4m2jq14yw76yqb2-terraform-docs-0.21.0"
+          "store_path": "/nix/store/h2s79zbafw6qa3h1mk2minsx61hqddhz-terraform-docs-0.22.0"
         }
       }
     },
