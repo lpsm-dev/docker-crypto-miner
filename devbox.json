@@ -14,7 +14,7 @@
     "kubernetes-helm@3.19.1",
     "kustomize@5.8.1",
     "pre-commit@4.5.1",
-    "terraform-docs@0.21.0",
+    "terraform-docs@0.22.0",
     "tflint@0.61.0"
   ]
 }
